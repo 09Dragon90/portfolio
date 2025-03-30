@@ -1,5 +1,7 @@
 {
   "Header": {
-    "GREETING": "Hello, how are you?"
+    "anker1": "About me",
+    "anker2": "Skills",
+    "anker3": "Projects"
   }
 }

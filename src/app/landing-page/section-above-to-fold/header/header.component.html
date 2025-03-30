@@ -1,0 +1,12 @@
+<header class="m-se">
+  <div class="menue">
+    <div class="btn-language" (click)="changeLanguage()">
+      <div class="slider" [class.active]="language == 'en'"></div>
+      <p [class.active-language]="language == 'de'">DE</p>
+      <p [class.active-language]="language == 'en'">EN</p>
+    </div>
+    <a href="#">{{ "Header.anker1" | translate }}</a>
+    <a href="#">{{ "Header.anker2" | translate }}</a>
+    <a href="#">{{ "Header.anker3" | translate }}</a>
+  </div>
+</header>

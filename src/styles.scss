@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  color: white;
+}
+
+.m-se {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+a {
+  text-decoration: none;
+}

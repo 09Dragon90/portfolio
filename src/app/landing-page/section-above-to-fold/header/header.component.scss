@@ -1,0 +1,49 @@
+@import "./../../../../assets/styles/colors.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+  .menue {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.btn-language {
+  position: relative;
+  border: 2px solid $main-green;
+  height: 24px;
+  width: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 0 8px;
+  cursor: pointer;
+  &:hover {
+    border-color: white;
+  }
+  p {
+    margin: 0;
+    z-index: 1;
+    color: $main-green;
+  }
+  .active-language {
+    color: white;
+  }
+  .slider {
+    position: absolute;
+    left: -2px;
+    width: 44px;
+    border-radius: 12px;
+    height: inherit;
+    background-color: $main-green;
+    transition: all 75ms ease-in-out;
+    &.active {
+      left: 40px;
+    }
+  }
+}
