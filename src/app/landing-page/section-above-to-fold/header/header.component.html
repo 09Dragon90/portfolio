@@ -5,9 +5,18 @@
       <p [class.active-language]="language == 'de'">DE</p>
       <p [class.active-language]="language == 'en'">EN</p>
     </div>
-    <a href="#">{{ "Header.anker1" | translate }}</a>
-    <a href="#">{{ "Header.anker2" | translate }}</a>
-    <a href="#">{{ "Header.anker3" | translate }}</a>
+    <div class="link">
+      <a href="#">{{ "Header.anker1" | translate }}</a>
+      <div class="point"></div>
+    </div>
+    <div class="link">
+      <a href="#">{{ "Header.anker2" | translate }}</a>
+      <div class="point"></div>
+    </div>
+    <div class="link">
+      <a href="#">{{ "Header.anker3" | translate }}</a>
+      <div class="point"></div>
+    </div>
   </div>
 
   <div class="img-logo"></div>
