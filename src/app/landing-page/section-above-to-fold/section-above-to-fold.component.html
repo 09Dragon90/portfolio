@@ -1,7 +1,15 @@
 <section>
   <app-header></app-header>
-  <div class="content flex">
-    <div class="coloums"></div>
+  <div class="content section-title">
+    <div class="coloums">
+      <div class="col">
+        <img
+          src="./../../../assets/images/scroll_down.png"
+          alt="Images_Scroll_Down"
+        />
+        <div class="seperator-left"></div>
+      </div>
+    </div>
     <div class="title">
       <h3>Frontend Developer</h3>
       <h1>Niko Helwig</h1>
@@ -14,6 +22,28 @@
         >
       </div>
     </div>
-    <div class="coloums"></div>
+    <div class="coloums">
+      <div class="col">
+        <a class="link-mail" href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
+        <a href="https://github.com/09Dragon90">
+          <img src="./../../../assets/icons/GitHub.png" alt="icon_github" />
+          <div class="point"></div>
+        </a>
+        <a href="https://de.linkedin.com/">
+          <img src="./../../../assets/icons/Linkedin.png" alt="icon_linkedin" />
+          <div class="point"></div>
+        </a>
+        <div class="seperator-right"></div>
+      </div>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-text">
+      <div class="point"></div>
+      @for (data of datas; track i;let i =$index) {
+      <span>{{ data }}</span>
+      <div class="point"></div>
+      }
+    </div>
   </div>
 </section>
