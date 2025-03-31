@@ -3,5 +3,6 @@
     "anker1": "About me",
     "anker2": "Skills",
     "anker3": "Projects"
-  }
+  },
+  "Title": { "btn1": "Check my work", "btn2": "Contact me" }
 }

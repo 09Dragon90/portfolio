@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-section-above-to-fold',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, TranslateModule],
   templateUrl: './section-above-to-fold.component.html',
   styleUrl: './section-above-to-fold.component.scss',
 })
