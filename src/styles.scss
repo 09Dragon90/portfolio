@@ -36,3 +36,24 @@ a {
     color: $main-green;
   }
 }
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Fira Code", monospace;
+  text-align: center;
+  color: $main-green;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Fira Code", monospace;
+  text-align: center;
+}
+h4 {
+  color: $main-green;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 24px;
+}
