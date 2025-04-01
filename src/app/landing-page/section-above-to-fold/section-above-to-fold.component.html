@@ -40,8 +40,8 @@
   <div class="marquee">
     <div class="marquee-text">
       <div class="point"></div>
-      @for (data of datas; track i;let i =$index) {
-      <span>{{ data }}</span>
+      @for (message of (messages | keyvalue); track message.key) {
+      <span>{{ message.value }}</span>
       <div class="point"></div>
       }
     </div>

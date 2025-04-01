@@ -4,5 +4,11 @@
     "anker2": "Skills",
     "anker3": "Projects"
   },
-  "Title": { "btn1": "Check my work", "btn2": "Contact me" }
+  "Title": { "btn1": "Check my work", "btn2": "Contact me" },
+  "Marquee": {
+    "Point0": "Avalibale for remote work",
+    "Point1": "Frontend Developer",
+    "Point2": "Base in Munich",
+    "Point3": "Open to Work"
+  }
 }

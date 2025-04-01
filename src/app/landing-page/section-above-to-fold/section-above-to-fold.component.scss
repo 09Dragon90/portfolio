@@ -124,10 +124,11 @@ section {
   height: 62px;
   background: #ffffff1f;
   backdrop-filter: blur(5.300000190734863px);
-  bottom: 55px;
-  left: -6px;
-  right: -6px;
-  transform: rotateZ(356deg);
+  bottom: 0;
+  left: 0;
+  right: -10px;
+  transform: rotateZ(357deg);
+  transform-origin: bottom left;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -143,6 +144,9 @@ section {
   display: flex;
   align-items: center;
   gap: 64px;
+  span {
+    color: $main-green;
+  }
 
   .point {
     height: 8px;
