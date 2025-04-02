@@ -1,10 +1,11 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { PopupComponent } from './popup/popup.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-section-skill-set',
   standalone: true,
-  imports: [CommonModule],
+  imports: [PopupComponent, TranslateModule],
   templateUrl: './section-skill-set.component.html',
   styleUrl: './section-skill-set.component.scss',
 })

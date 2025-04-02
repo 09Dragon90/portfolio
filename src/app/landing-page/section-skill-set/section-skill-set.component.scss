@@ -54,16 +54,25 @@ section {
 }
 
 .skill {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100px;
+  height: fit-content;
   p {
     text-align: center;
   }
 
   img {
     width: 64%;
+    padding-bottom: 8px;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+  &:hover app-popup {
+    display: block !important;
   }
 }
 
