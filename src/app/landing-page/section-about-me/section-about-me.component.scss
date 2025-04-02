@@ -5,12 +5,16 @@ section {
   padding-top: 92px;
   padding-bottom: 92px;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   font-family: "Karla", sans-serif;
 }
 
 .section-about-me {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   .text {
     margin-top: 100px;
 
