@@ -42,6 +42,13 @@ section {
 .row {
   display: flex;
   gap: 24px;
+  p {
+    color: #ffffffcc;
+    &:hover {
+      color: white;
+    }
+  }
+
   img {
     width: 32px;
     height: 32px;
