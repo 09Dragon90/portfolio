@@ -1,0 +1,48 @@
+@import "./../../../../assets/styles/colors.scss";
+
+.popup {
+  position: relative;
+  width: 190px;
+  height: 130px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .content-popup {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    right: 4px;
+    bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+  }
+}
+
+.text,
+p {
+  color: $main-green;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.skills {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    height: 32px;
+    width: 32px;
+  }
+}

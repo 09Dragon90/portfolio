@@ -71,6 +71,11 @@ section {
   &:hover img {
     transform: scale(1.1);
   }
+  app-popup {
+    position: absolute;
+    bottom: 90px;
+    left: -6px;
+  }
   &:hover app-popup {
     display: block !important;
   }
