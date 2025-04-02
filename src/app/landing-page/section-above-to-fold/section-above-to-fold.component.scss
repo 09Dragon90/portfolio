@@ -41,26 +41,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 48px;
-  .btn-title {
-    height: 48px;
-    border: 1px solid white;
-    border-radius: 100px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    & span {
-      padding: 0 24px;
-    }
-    &:hover {
-      border-color: $main-green;
-      & span {
-        padding: 0 24px;
-        color: $main-green;
-        animation: moveTicker 3s linear infinite;
-      }
-    }
-  }
 }
 
 .col {
@@ -156,30 +136,5 @@ section {
   }
   to {
     transform: translateX(-100%);
-  }
-}
-
-@keyframes moveTicker {
-  0% {
-    transform: translateX(0%);
-  }
-  48% {
-    transform: translateX(-100%);
-    opacity: 1;
-  }
-  49% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  51% {
-    transform: translateX(100%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0%);
   }
 }
