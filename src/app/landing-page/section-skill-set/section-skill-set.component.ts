@@ -17,6 +17,7 @@ export class SectionSkillSetComponent {
     { name: 'Material Design', image: 'materialDesign.png' },
     { name: 'TypeScript', image: 'typeScript.png' },
     { name: 'Angular', image: 'angular.png' },
+    { name: 'SCSS/SASS', image: 'sass.png' },
     { name: 'Firebase', image: 'firebase.png' },
     { name: 'Git', image: 'git.png' },
     { name: 'Rest-API', image: 'restApi.png' },
