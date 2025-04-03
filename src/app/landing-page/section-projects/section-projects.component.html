@@ -1,1 +1,28 @@
-<p>section-projects works!</p>
+<section id="section-projects">
+  <div class="content section-projects">
+    <div>
+      <h4>{{ "Projects.headline" | translate }}</h4>
+      <h2>{{ "Projects.title" | translate }}</h2>
+    </div>
+    <p>
+      {{ "Projects.description" | translate }}
+    </p>
+    <div class="project-list">
+      @for (project of projects; track i;let i = $index) {
+
+      <div class="project">
+        <p>
+          {{ project.name }}
+        </p>
+        <div class="technologies-box">
+          @for (technologie of project.technologies; track $index) {
+          <div class="technologie">
+            {{ technologie }}
+          </div>
+          }
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
