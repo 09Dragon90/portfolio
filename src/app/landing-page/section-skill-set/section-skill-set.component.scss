@@ -1,7 +1,11 @@
 @import "./../../../assets/styles/colors.scss";
 
 section {
-  background-color: $main-bg;
+  background: radial-gradient(
+    22.43% 43.85% at 1.22% 52.45%,
+    #08463b,
+    $main-bg 100%
+  );
   padding-top: 92px;
   padding-bottom: 92px;
   width: 100%;
