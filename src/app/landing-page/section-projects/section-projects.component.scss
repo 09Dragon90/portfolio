@@ -29,20 +29,54 @@ section {
 
 .project {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+
+  .project-img {
+    position: absolute;
+    right: 0;
+    width: 296px;
+    height: 192px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .bg-img {
+      top: 20px;
+      left: 24px;
+      z-index: 0;
+    }
+  }
+
+  &:last-child .project-img {
+    bottom: 0;
+  }
+
+  &:first-child .project-img {
+    top: 0;
+  }
+}
+
+.project-data {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 70%;
   padding: 40px 32px;
   border-top: 1px solid $main-green;
   cursor: pointer;
 
   &:hover {
     background-color: #3dcfb64d;
-    p img {
+    img {
       display: block !important;
       height: 23px;
       width: 23px;
-      padding-left: 4px;
     }
   }
 
@@ -56,6 +90,10 @@ section {
 
   &:last-child {
     border-bottom: 1px solid $main-green;
+  }
+
+  &:hover ~ .project-img {
+    display: block !important;
   }
 }
 

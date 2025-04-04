@@ -9,22 +9,32 @@
     </p>
     <div class="project-list">
       @for (project of projects; track i;let i = $index) {
-
       <div class="project">
-        <p>
-          {{ project.name }}
-          <img
-            style="display: none"
-            src="./../../../assets/icons/arrow_outward.png"
-            alt="arrow"
-          />
-        </p>
-        <div class="technologies-box">
-          @for (technologie of project.technologies; track $index) {
-          <div class="technologie">
-            {{ technologie }}
+        <div class="project-data">
+          <p>
+            {{ project.name }}
+            <img
+              style="display: none"
+              src="./../../../assets/icons/arrow_outward.png"
+              alt="arrow"
+            />
+          </p>
+          <div class="technologies-box">
+            @for (technologie of project.technologies; track $index) {
+            <div class="technologie">
+              {{ technologie }}
+            </div>
+            }
           </div>
-          }
+        </div>
+
+        <div style="display: none" class="project-img">
+          <img
+            class="bg-img"
+            src="./../../../assets/images/hover_project.png"
+            alt=""
+          />
+          <img src="./../../../assets/images/{{ project.images }}" alt="" />
         </div>
       </div>
       }
