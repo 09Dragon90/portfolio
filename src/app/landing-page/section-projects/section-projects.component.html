@@ -13,6 +13,11 @@
       <div class="project">
         <p>
           {{ project.name }}
+          <img
+            style="display: none"
+            src="./../../../assets/icons/arrow_outward.png"
+            alt="arrow"
+          />
         </p>
         <div class="technologies-box">
           @for (technologie of project.technologies; track $index) {

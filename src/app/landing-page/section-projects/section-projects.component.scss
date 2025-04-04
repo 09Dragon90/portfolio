@@ -35,27 +35,39 @@ section {
   padding: 40px 32px;
   border-top: 1px solid $main-green;
   cursor: pointer;
+
   &:hover {
     background-color: #3dcfb64d;
+    p img {
+      display: block !important;
+      height: 23px;
+      width: 23px;
+      padding-left: 4px;
+    }
   }
+
   p {
     font-family: "Fira Code", monospace;
     font-weight: 700;
     font-size: 24px;
+    display: flex;
+    align-items: center;
   }
+
   &:last-child {
     border-bottom: 1px solid $main-green;
   }
-  .technologies-box {
+}
+
+.technologies-box {
+  display: flex;
+  .technologie {
     display: flex;
-    .technologie {
-      display: flex;
-      padding-left: 8px;
-      padding-right: 8px;
-      border-right: 1px solid $main-green;
-      &:last-child {
-        border: none;
-      }
+    padding-left: 8px;
+    padding-right: 8px;
+    border-right: 1px solid $main-green;
+    &:last-child {
+      border: none;
     }
   }
 }
