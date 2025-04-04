@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { DialogProjectComponent } from './dialog-project/dialog-project.component';
 
 interface Project {
   name: string;
@@ -13,7 +14,7 @@ interface Project {
 @Component({
   selector: 'app-section-projects',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, DialogProjectComponent],
   templateUrl: './section-projects.component.html',
   styleUrl: './section-projects.component.scss',
 })
