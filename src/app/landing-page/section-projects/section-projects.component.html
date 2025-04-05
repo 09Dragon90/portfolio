@@ -9,7 +9,7 @@
     </p>
     <div class="project-list">
       @for (project of projects; track i;let i = $index) {
-      <div class="project">
+      <div class="project" (click)="openDialog(i)">
         <div class="project-data">
           <p>
             {{ project.name }}
