@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { DialogProjectComponent } from './dialog-project/dialog-project.component';
+import { MatDialog } from '@angular/material/dialog';
 
 interface Project {
   name: string;
@@ -14,7 +15,7 @@ interface Project {
 @Component({
   selector: 'app-section-projects',
   standalone: true,
-  imports: [TranslateModule, DialogProjectComponent],
+  imports: [TranslateModule],
   templateUrl: './section-projects.component.html',
   styleUrl: './section-projects.component.scss',
 })
@@ -22,7 +23,17 @@ export class SectionProjectsComponent {
   @Input() index: number = 0;
   projects: Project[] = [];
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, public dialog: MatDialog) {}
+
+  openDialog(index: number): void {
+    const dialogRef = this.dialog.open(DialogProjectComponent, {
+      data: { projects: this.projects, index: index },
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
+    });
+  }
 
   ngOnInit() {
     this.loadMarquee(localStorage.getItem('language') || 'de');
