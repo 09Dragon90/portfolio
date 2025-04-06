@@ -2,15 +2,7 @@ import { Component, Input } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { DialogProjectComponent } from './dialog-project/dialog-project.component';
 import { MatDialog } from '@angular/material/dialog';
-
-interface Project {
-  name: string;
-  technologies: string[];
-  images: string;
-  description: string;
-  github: string;
-  link: string;
-}
+import { Project } from '../../../assets/interfaces/project.interface';
 
 @Component({
   selector: 'app-section-projects',
