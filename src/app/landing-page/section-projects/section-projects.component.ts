@@ -20,6 +20,7 @@ export class SectionProjectsComponent {
   openDialog(index: number): void {
     const dialogRef = this.dialog.open(DialogProjectComponent, {
       data: { projects: this.projects, index: index },
+      panelClass: 'dialog-project',
     });
 
     dialogRef.afterClosed().subscribe((result) => {
