@@ -22,24 +22,19 @@ export class SectionProjectsComponent {
       data: { projects: this.projects, index: index },
       panelClass: 'dialog-project',
     });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
-    });
   }
 
   ngOnInit() {
-    this.loadMarquee(localStorage.getItem('language') || 'de');
+    this.loadProjects(localStorage.getItem('language') || 'de');
     this.translate.onLangChange.subscribe((event) => {
-      this.loadMarquee(event.lang);
+      this.loadProjects(event.lang);
     });
   }
 
-  loadMarquee(lang: string) {
+  loadProjects(lang: string) {
     this.translate.getTranslation(lang).subscribe((data) => {
       this.projects = [];
       this.projects = data['Projects']['dataProjects'] || {};
-      console.log(this.projects[0].name);
     });
   }
 }
