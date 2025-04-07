@@ -61,5 +61,13 @@
         "link": ""
       }
     ]
+  },
+  "Contact": {
+    "title": "Let's work together",
+    "headline": "Contact me",
+    "headline2": "Got a problem to solve?",
+    "description": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+    "description2": "Need a Frontend developer?",
+    "description3": "Let’s talk!"
   }
 }

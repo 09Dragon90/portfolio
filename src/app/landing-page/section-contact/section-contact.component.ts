@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-section-contact',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './section-contact.component.html',
-  styleUrl: './section-contact.component.scss'
+  styleUrl: './section-contact.component.scss',
 })
-export class SectionContactComponent {
-
-}
+export class SectionContactComponent {}

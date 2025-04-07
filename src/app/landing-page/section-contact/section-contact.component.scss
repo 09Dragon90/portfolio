@@ -10,3 +10,12 @@ section {
   align-items: center;
   font-family: "Karla", sans-serif;
 }
+
+.section-contact {
+  display: flex;
+  width: 100%;
+  .contact-left,
+  .contact-right {
+    width: 50%;
+  }
+}
