@@ -33,13 +33,15 @@
     "title": "Featured Projects",
     "headline": "Portfolio",
     "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "headlineDialog": "What is this project about?",
+    "nextBtnDialog": "Next project",
     "dataProjects": [
       {
         "name": "Join",
         "technologies": ["HTML", "CSS", "JavaScript", "Firebase"],
         "images": "join.png",
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "github": "",
+        "github": "https://github.com/09Dragon90/join",
         "link": ""
       },
       {
@@ -47,7 +49,7 @@
         "technologies": ["HTML", "CSS", "JavaScript"],
         "images": "el_pollo_loco.png",
         "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "github": "",
+        "github": "https://github.com/09Dragon90/el_pollo_loco",
         "link": ""
       },
       {

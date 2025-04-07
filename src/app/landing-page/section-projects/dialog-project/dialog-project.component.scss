@@ -1,7 +1,131 @@
 @import "./../../../../assets/styles/colors.scss";
 
 .dialog {
-  padding: 32px;
+  position: relative;
+  padding: 80px;
   display: flex;
   background: linear-gradient(58.22deg, #1c1c1c 18.26%, #08463b 93.28%);
+  font-family: "Karla", sans-serif;
+  color: white;
+}
+
+.dialof-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding-right: 80px;
+}
+
+.title {
+  div {
+    font-weight: 700;
+    font-size: 128px;
+    color: $main-green;
+    line-height: 100px;
+  }
+  h2 {
+    color: white;
+  }
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 24px;
+  color: $main-green;
+}
+
+.discription {
+  font-size: 18px;
+}
+
+.dialof-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 520px;
+  }
+}
+
+.technologies {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  .technology {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 4px;
+    }
+  }
+}
+
+.btn-box {
+  display: flex;
+  gap: 32px;
+  .btn {
+    height: 48px;
+    border: 2px solid white;
+    padding: 24px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    span {
+      font-size: 18px;
+    }
+    img {
+      transition: all 125ms ease-in-out;
+    }
+    &:hover {
+      span {
+        color: $main-green;
+      }
+      img {
+        transform: translate(10px, -2px);
+      }
+      border-color: $main-green;
+    }
+  }
+}
+
+.btn-close {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 56px;
+  right: 56px;
+  background-image: url(./../../../../assets/icons/btnClose.png);
+  background-position: center center;
+  cursor: pointer;
+  &:hover {
+    background-image: url(./../../../../assets/icons/btnCloseHover.png);
+  }
+}
+
+.btn-next {
+  position: absolute;
+  height: 48px;
+  bottom: 56px;
+  right: 56px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  img {
+    height: 32px;
+    width: 32px;
+    transition: all 125ms ease-in-out;
+  }
+  &:hover {
+    color: $main-green;
+    img {
+      transform: translate(10px, 0);
+    }
+  }
 }
