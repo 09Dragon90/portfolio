@@ -3,6 +3,7 @@ import { SectionAboveToFoldComponent } from './section-above-to-fold/section-abo
 import { SectionAboutMeComponent } from './section-about-me/section-about-me.component';
 import { SectionSkillSetComponent } from './section-skill-set/section-skill-set.component';
 import { SectionProjectsComponent } from './section-projects/section-projects.component';
+import { SectionContactComponent } from './section-contact/section-contact.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -12,6 +13,7 @@ import { SectionProjectsComponent } from './section-projects/section-projects.co
     SectionAboutMeComponent,
     SectionSkillSetComponent,
     SectionProjectsComponent,
+    SectionContactComponent,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss',

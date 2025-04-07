@@ -1,0 +1,12 @@
+@import "./../../../assets/styles/colors.scss";
+
+section {
+  background-color: $main-bg;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+}
