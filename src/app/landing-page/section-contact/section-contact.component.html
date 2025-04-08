@@ -17,29 +17,62 @@
       </p>
     </div>
     <div class="contact-right">
-      <form>
+      <form (ngSubmit)="onSubmit()">
         <div class="row">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" value="John" /><br />
-          <span></span>
+          <label for="name">{{
+            "Contact.Form.Name.headline" | translate
+          }}</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="{{ 'Contact.Form.Name.placeholder' | translate }}"
+          />
+          <p>{{ "Contact.Form.Name.error" | translate }}</p>
         </div>
         <div class="row">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" value="John" /><br />
-          <span></span>
+          <label for="email">{{
+            "Contact.Form.Email.headline" | translate
+          }}</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="{{ 'Contact.Form.Email.placeholder' | translate }}"
+          />
+          <p>{{ "Contact.Form.Email.error" | translate }}</p>
         </div>
         <div class="row">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" value="John" /><br />
-          <span></span>
+          <label for="message">{{
+            "Contact.Form.Message.headline" | translate
+          }}</label>
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            placeholder="{{ 'Contact.Form.Message.placeholder' | translate }}"
+          ></textarea>
+          <p>{{ "Contact.Form.Message.error" | translate }}</p>
         </div>
-        <div class="row">
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-          <label for="vehicle3"> I have a boat</label>
-          <span></span>
+        <div class="privacyPolicy">
+          <label for="privacyPolicy" class="btn-checkbox">
+            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" />
+            <span class="checkmark"></span>
+            {{ "Contact.Form.PrivacyPolicy.text1" | translate }}
+            <span class="green" (click)="openPrivacyPolicy($event)"
+              >{{ "Contact.Form.PrivacyPolicy.text2" | translate }}
+            </span>
+            {{ "Contact.Form.PrivacyPolicy.text3" | translate }}
+          </label>
+          <p>{{ "Contact.Form.PrivacyPolicy.error" | translate }}</p>
         </div>
-
-        <input type="submit" value="Submit" />
+        <div class="btn-box">
+          <button class="btn-title" type="submit">
+            <span>
+              {{ "Contact.Form.btn" | translate }}
+            </span>
+          </button>
+        </div>
       </form>
     </div>
   </div>

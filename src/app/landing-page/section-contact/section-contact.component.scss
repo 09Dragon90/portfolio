@@ -46,3 +46,95 @@ section {
   color: $main-green;
   font-family: "Fira Code", monospace;
 }
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    display: none;
+    color: #ec7b7bcc;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px #3dcfb680 solid;
+  border-bottom: 1px #3dcfb680 solid;
+  padding: 32px;
+  &:hover,
+  &:has(input:focus-visible),
+  &:has(textarea:focus-visible) {
+    border-color: $main-green;
+  }
+  label {
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    font-size: 24px;
+    color: $main-green;
+    margin-bottom: 16px;
+  }
+  input,
+  textarea {
+    background: transparent;
+    border: none;
+    width: 80%;
+    height: 24px;
+    font-size: 18px;
+  }
+  textarea {
+    height: 100px;
+    width: 100%;
+    resize: none;
+  }
+}
+
+$hover-bg: rgba(61, 207, 182, 0.1);
+
+.privacyPolicy {
+  margin-top: 40px;
+
+  .green {
+    color: $main-green;
+    cursor: pointer;
+    padding: 4px;
+    border-bottom: 1px transparent solid;
+    &:hover {
+      border-color: $main-green;
+    }
+  }
+}
+
+.btn-checkbox {
+  input {
+    display: none;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  .checkmark {
+    height: 24px;
+    width: 24px;
+    background-image: url(./../../../assets/icons/btnUnchecked.png);
+    margin-right: 8px;
+    &:hover {
+      background-color: $hover-bg;
+      border-radius: 50%;
+    }
+  }
+  input:checked + .checkmark {
+    background-image: url(./../../../assets/icons/btnChecked.png);
+  }
+}
+
+.btn-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  .btn-title {
+    background-color: transparent;
+  }
+}
