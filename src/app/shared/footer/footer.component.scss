@@ -1,0 +1,76 @@
+@import "./../../../assets/styles/colors.scss";
+
+section {
+  background-color: $main-bg;
+  display: flex;
+  font-family: "Karla", sans-serif;
+}
+
+footer {
+  height: 120px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-logo {
+  display: block;
+  height: 60%;
+  width: auto;
+  background-image: url(./../../../assets/images/logo.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  &:hover {
+    background-image: url(./../../../assets/images/logo_wof.png);
+  }
+}
+
+.left {
+  height: 100%;
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.middle {
+  font-family: "Fira Code", monospace;
+  color: $main-green;
+}
+
+.right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  a {
+    position: relative;
+    padding-left: 1em; // Platz für den Punkt
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $main-green;
+
+      &::before {
+        background-color: $main-green;
+      }
+    }
+  }
+}
