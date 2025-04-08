@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-section-contact',
@@ -14,10 +15,11 @@ export class SectionContactComponent {
   dataContact = { name: '', mail: '', message: '' };
   durationInSeconds = 5;
 
-  constructor(private snackBar: MatSnackBar) {}
+  constructor(private snackBar: MatSnackBar, public dialog: MatDialog) {}
 
   openPrivacyPolicy(e: any) {
     e.preventDefault();
+    window.open('/privacyPolicy', "_blank'");
   }
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid && ngForm.submitted) {
