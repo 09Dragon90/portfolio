@@ -1,4 +1,4 @@
-@import "./../../../../assets/styles/colors.scss";
+@import "./../../../assets/styles/colors.scss";
 
 header {
   display: flex;
@@ -52,13 +52,13 @@ header {
 .img-logo {
   height: 60%;
   width: 180px;
-  background-image: url(./../../../../assets/images/logo.png);
+  background-image: url(./../../../assets/images/logo.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
   &:hover {
-    background-image: url(./../../../../assets/images/logo_wof.png);
+    background-image: url(./../../../assets/images/logo_wof.png);
   }
 }
 
