@@ -54,5 +54,36 @@
         "link": ""
       }
     ]
+  },
+  "Contact": {
+    "title": "Let's work together",
+    "headline": "Contact me",
+    "headline2": "Got a problem to solve?",
+    "description": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+    "description2": "Need a Frontend developer?",
+    "description3": "Let’s talk!",
+    "Form": {
+      "Name": {
+        "headline": "What's your name?",
+        "placeholder": "Your name goes here",
+        "error": "Oops! it seems your name is missing"
+      },
+      "Email": {
+        "headline": "What's your email?",
+        "placeholder": "youremail@email.com",
+        "error": "Hoppla! your email is required"
+      },
+      "Message": {
+        "headline": "How can I help you?",
+        "placeholder": "Hello Lukas, I am interested in...",
+        "error": "What do you need to develop?"
+      },
+      "PrivacyPolicy": {
+        "text1": "I've read the ",
+        "text2": "privacy policy ",
+        "text3": "and agree to the processing of my data as outlined.",
+        "error": "Please accept the privacy policy."
+      }
+    }
   }
 }
