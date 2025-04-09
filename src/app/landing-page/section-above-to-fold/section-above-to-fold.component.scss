@@ -5,9 +5,14 @@ section {
   background: linear-gradient(58.22deg, #1c1c1c 18.26%, #08463b 93.28%);
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: "Karla", sans-serif;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+app-header {
+  width: 100%;
 }
 
 .section-title {
