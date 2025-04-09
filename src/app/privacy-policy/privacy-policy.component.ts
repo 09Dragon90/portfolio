@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -8,4 +8,32 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss',
 })
-export class PrivacyPolicyComponent {}
+export class PrivacyPolicyComponent {
+  language: 'de' | 'en' = 'de';
+  constructor(private translate: TranslateService) {
+    this.loadLanguage();
+  }
+
+  changeLanguage() {
+    this.language = this.language == 'de' ? 'en' : 'de';
+    this.translate.use(this.language);
+    this.saveLanguage();
+  }
+
+  saveLanguage() {
+    localStorage.setItem('language', this.language);
+  }
+
+  loadLanguage() {
+    let language = localStorage.getItem('language');
+    if (language == null) {
+      this.translate.setDefaultLang('de');
+      this.saveLanguage();
+    } else if (language == 'de' || language == 'en') {
+      this.translate.setDefaultLang(language);
+      this.language = language;
+    } else {
+      console.error('Wrong language');
+    }
+  }
+}
