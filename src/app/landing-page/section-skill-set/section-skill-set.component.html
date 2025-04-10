@@ -1,39 +1,37 @@
-<section id="section-skill-set">
-  <div class="content section-skill-set">
-    <h4>{{ "Skills.headline" | translate }}</h4>
-    <div class="section-skills">
-      <div class="text">
-        <article>
-          <h2>{{ "Skills.title" | translate }}</h2>
-          <p>
-            {{ "Skills.description" | translate }}
-          </p>
-          <p class="bigger">
-            {{ "Skills.skill1" | translate
-            }}<span> {{ "Skills.skill2" | translate }}</span>
-          </p>
-          <p class="smaller">
-            {{ "Skills.contactMe" | translate }}
-          </p>
-          <a class="btn-title" href="#"
-            ><span>{{ "Skills.btn" | translate }}</span></a
-          >
-        </article>
-      </div>
-      <div class="skills-box">
-        @for (skill of skills; track i;let i =$index) {
-        <div class="skill">
-          <img
-            src="./../../../assets/icons/{{ skill.image }}"
-            alt="{{ getAltName(skill.image) }}"
-          />
-          <p>{{ skill.name }}</p>
-          @if (i >= skills.length-1) {
-          <app-popup style="display: none"></app-popup>
-          }
-        </div>
+<section id="section-skill-set" class="content">
+  <h4>{{ "Skills.headline" | translate }}</h4>
+  <div class="section-skills">
+    <div class="text">
+      <article>
+        <h2>{{ "Skills.title" | translate }}</h2>
+        <p>
+          {{ "Skills.description" | translate }}
+        </p>
+        <p class="bigger">
+          {{ "Skills.skill1" | translate
+          }}<span> {{ "Skills.skill2" | translate }}</span>
+        </p>
+        <p class="smaller">
+          {{ "Skills.contactMe" | translate }}
+        </p>
+        <a class="btn-title" href="#"
+          ><span>{{ "Skills.btn" | translate }}</span></a
+        >
+      </article>
+    </div>
+    <div class="skills-box">
+      @for (skill of skills; track i;let i =$index) {
+      <div class="skill">
+        <img
+          src="./../../../assets/icons/{{ skill.image }}"
+          alt="{{ getAltName(skill.image) }}"
+        />
+        <p>{{ skill.name }}</p>
+        @if (i >= skills.length-1) {
+        <app-popup style="display: none"></app-popup>
         }
       </div>
+      }
     </div>
   </div>
 </section>

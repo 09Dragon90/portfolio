@@ -1,21 +1,6 @@
 @import "./../../../assets/styles/colors.scss";
 
-section {
-  background: radial-gradient(
-    22.43% 43.85% at 1.22% 52.45%,
-    #08463b,
-    $main-bg 100%
-  );
-  padding-top: 92px;
-  padding-bottom: 92px;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  font-family: "Karla", sans-serif;
-}
-
-.section-skill-set {
+#section-skill-set {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +64,7 @@ section {
   app-popup {
     position: absolute;
     bottom: 90px;
-    left: -6px;
+    left: -85px;
   }
   &:hover app-popup {
     display: block !important;
@@ -97,4 +82,43 @@ section {
 
 .smaller {
   font-size: 14px !important;
+}
+
+@media (max-width: 1224px) {
+  .skills-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  #section-skill-set {
+    .section-skills {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .text {
+    article {
+      width: 100%;
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .skills-box {
+    margin-top: 50px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .skills-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
