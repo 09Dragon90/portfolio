@@ -28,13 +28,6 @@
   margin-right: auto;
 }
 
-@media (max-width: 1632px) {
-  .content {
-    margin-left: 96px;
-    margin-right: 96px;
-  }
-}
-
 a {
   text-decoration: none;
   &:active {
@@ -125,4 +118,37 @@ body {
   border-radius: 30px;
   background: transparent;
   max-height: 90%;
+}
+
+@media (max-width: 1632px) {
+  .content {
+    margin-left: 96px;
+    margin-right: 96px;
+  }
+}
+
+@media (max-width: 1355px) {
+  .content {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 930px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 16px;
+  }
 }
