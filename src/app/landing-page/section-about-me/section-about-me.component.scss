@@ -1,17 +1,6 @@
 @import "./../../../assets/styles/colors.scss";
 
-section {
-  background-color: $main-bg;
-  padding-top: 92px;
-  padding-bottom: 92px;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  font-family: "Karla", sans-serif;
-}
-
-.section-about-me {
+#section-about-me {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -59,19 +48,76 @@ section {
   width: 568px;
   height: 568px;
   position: relative;
-  .hover-profile,
-  .img-profile {
+  .hover-profile {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 30px;
+    z-index: 0;
   }
+  .img-profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    z-index: 1;
+  }
+
   .hover-profile {
     transition: all 0.3s ease-in-out;
   }
   &:hover .hover-profile {
-    transform: translate(-30px, 46px);
+    transform: translate(-6%, 9%);
+  }
+}
+
+@media (max-width: 1292px) {
+  .img-container {
+    width: 50%;
+    .hover-profile,
+    .img-profile {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  #section-about-me {
+    gap: 48px;
+    .text {
+      width: 50%;
+      height: auto;
+      article {
+        gap: 30px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #section-about-me {
+    flex-direction: column;
+    align-items: center;
+    gap: unset;
+    .text {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    max-width: 480px;
+    .hover-profile,
+    .img-profile {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+    }
   }
 }

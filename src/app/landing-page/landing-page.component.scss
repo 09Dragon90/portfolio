@@ -1,0 +1,10 @@
+@import "./../../assets/styles/colors.scss";
+
+app-section-about-me {
+  background-color: $main-bg;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  width: 100%;
+  display: flex;
+  font-family: "Karla", sans-serif;
+}

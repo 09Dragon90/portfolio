@@ -1,49 +1,44 @@
-<section id="section-about-me">
-  <div class="content section-about-me">
-    <div class="img-container">
-      <img
-        class="hover-profile"
-        src="./../../../assets/images/hover_profile.png"
-        alt="image_profile"
-      />
-      <img
-        class="img-profile"
-        src="./../../../assets/images/profile.png"
-        alt="image_profile"
-      />
-    </div>
-    <div class="text">
-      <h4>{{ "AboutMe.headline" | translate }}</h4>
-      <article>
-        <h2>{{ "AboutMe.title" | translate }}</h2>
+<section id="section-about-me" class="content">
+  <div class="img-container">
+    <img
+      class="hover-profile"
+      src="./../../../assets/images/hover_profile.png"
+      alt="image_profile"
+    />
+    <img
+      class="img-profile"
+      src="./../../../assets/images/profile.png"
+      alt="image_profile"
+    />
+  </div>
+  <div class="text">
+    <h4>{{ "AboutMe.headline" | translate }}</h4>
+    <article>
+      <h2>{{ "AboutMe.title" | translate }}</h2>
+      <p>
+        {{ "AboutMe.description" | translate }}
+      </p>
+      <div class="row">
+        <img
+          src="./../../../assets/icons/location_on.png"
+          alt="icon_location"
+        />
         <p>
-          {{ "AboutMe.description" | translate }}
+          {{ "AboutMe.location" | translate }}
         </p>
-        <div class="row">
-          <img
-            src="./../../../assets/icons/location_on.png"
-            alt="icon_location"
-          />
-          <p>
-            {{ "AboutMe.location" | translate }}
-          </p>
-        </div>
-        <div class="row">
-          <img
-            src="./../../../assets/icons/cognition.png"
-            alt="icon_cognition"
-          />
-          <p>
-            {{ "AboutMe.cognition" | translate }}
-          </p>
-        </div>
-        <div class="row">
-          <img src="./../../../assets/icons/quality.png" alt="icon_quality" />
-          <p>
-            {{ "AboutMe.quality" | translate }}
-          </p>
-        </div>
-      </article>
-    </div>
+      </div>
+      <div class="row">
+        <img src="./../../../assets/icons/cognition.png" alt="icon_cognition" />
+        <p>
+          {{ "AboutMe.cognition" | translate }}
+        </p>
+      </div>
+      <div class="row">
+        <img src="./../../../assets/icons/quality.png" alt="icon_quality" />
+        <p>
+          {{ "AboutMe.quality" | translate }}
+        </p>
+      </div>
+    </article>
   </div>
 </section>
