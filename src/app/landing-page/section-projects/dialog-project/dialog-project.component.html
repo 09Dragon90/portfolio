@@ -1,44 +1,49 @@
-<div class="dialog">
-  <div class="dialof-left">
-    <div class="title">
-      <div class="index-title">{{ indexTitle }}</div>
-      <h2>{{ project.name }}</h2>
-    </div>
-    <div class="headline">{{ "Projects.headlineDialog" | translate }}</div>
-    <div class="discription">{{ project.description }}</div>
-    <div class="technologies">
-      @for (technology of project.technologies; track $index) {
-      <div class="technology">
-        <img
-          src="./../../../../assets/icons/green{{ technology }}.png"
-          alt=""
-        />{{ technology }}
+<div class="dialog" mat-dialog-content>
+  <div class="content-dialog">
+    <div class="btn-next">
+      <div (click)="nextProject()">
+        {{ "Projects.nextBtnDialog" | translate }}
+        <img src="./../../../../assets/icons/arrow_forward.png" alt="" />
       </div>
-      }
     </div>
-    <div class="btn-box">
-      <a class="btn" href="{{ project.github }}" target="_blank">
-        <span>GitHub</span>
-        <img
-          src="./../../../../assets/icons/green_arrow_outward.png"
-          alt="green_arrow_outward"
-        />
-      </a>
-      <a class="btn" href="{{ project.link }}" target="_blank">
-        <span>Live Test</span>
-        <img
-          src="./../../../../assets/icons/green_arrow_outward.png"
-          alt="green_arrow_outward"
-        />
-      </a>
+
+    <div class="dialof-left">
+      <div class="title">
+        <div class="index-title">{{ indexTitle }}</div>
+        <h2>{{ project.name }}</h2>
+      </div>
+      <div class="headline">{{ "Projects.headlineDialog" | translate }}</div>
+      <div class="discription">{{ project.description }}</div>
+      <div class="technologies">
+        @for (technology of project.technologies; track $index) {
+        <div class="technology">
+          <img
+            src="./../../../../assets/icons/green{{ technology }}.png"
+            alt=""
+          />{{ technology }}
+        </div>
+        }
+      </div>
+      <div class="btn-box">
+        <a class="btn" href="{{ project.github }}" target="_blank">
+          <span>GitHub</span>
+          <img
+            src="./../../../../assets/icons/green_arrow_outward.png"
+            alt="green_arrow_outward"
+          />
+        </a>
+        <a class="btn" href="{{ project.link }}" target="_blank">
+          <span>Live Test</span>
+          <img
+            src="./../../../../assets/icons/green_arrow_outward.png"
+            alt="green_arrow_outward"
+          />
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="dialof-right">
-    <img src="./../../../../assets/images/{{ project.images }}" alt="" />
-  </div>
-  <div class="btn-close" (click)="onNoClick()"></div>
-  <div class="btn-next" (click)="nextProject()">
-    {{ "Projects.nextBtnDialog" | translate }}
-    <img src="./../../../../assets/icons/arrow_forward.png" alt="" />
+    <div class="dialof-right">
+      <img src="./../../../../assets/images/{{ project.images }}" alt="" />
+    </div>
+    <div class="btn-close"><div (click)="onNoClick()"></div></div>
   </div>
 </div>

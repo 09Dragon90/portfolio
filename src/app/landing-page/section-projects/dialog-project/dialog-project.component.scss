@@ -3,10 +3,14 @@
 .dialog {
   position: relative;
   padding: 80px;
-  display: flex;
   background: linear-gradient(58.22deg, #1c1c1c 18.26%, #08463b 93.28%);
   font-family: "Karla", sans-serif;
   color: white;
+  max-height: unset;
+}
+
+.content-dialog {
+  display: flex;
 }
 
 .dialof-left {
@@ -18,14 +22,16 @@
 }
 
 .title {
-  div {
+  .index-title {
     font-weight: 700;
     font-size: 128px;
     color: $main-green;
-    line-height: 100px;
+    line-height: 128px;
   }
   h2 {
     color: white;
+    text-align: left;
+    line-height: 64px;
   }
 }
 
@@ -52,6 +58,7 @@
 .technologies {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
   .technology {
     display: flex;
@@ -95,15 +102,17 @@
 
 .btn-close {
   position: absolute;
-  height: 48px;
-  width: 48px;
   top: 56px;
   right: 56px;
-  background-image: url(./../../../../assets/icons/btnClose.png);
-  background-position: center center;
-  cursor: pointer;
-  &:hover {
-    background-image: url(./../../../../assets/icons/btnCloseHover.png);
+  div {
+    height: 48px;
+    width: 48px;
+    background-image: url(./../../../../assets/icons/btnClose.png);
+    background-position: center center;
+    cursor: pointer;
+    &:hover {
+      background-image: url(./../../../../assets/icons/btnCloseHover.png);
+    }
   }
 }
 
@@ -112,20 +121,91 @@
   height: 48px;
   bottom: 56px;
   right: 56px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-family: "Karla", sans-serif;
-  font-size: 18px;
-  img {
-    height: 32px;
-    width: 32px;
-    transition: all 125ms ease-in-out;
-  }
-  &:hover {
-    color: $main-green;
+  div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
     img {
-      transform: translate(10px, 0);
+      height: 32px;
+      width: 32px;
+      transition: all 125ms ease-in-out;
+    }
+    &:hover {
+      color: $main-green;
+      img {
+        transform: translate(10px, 0);
+      }
     }
   }
 }
+
+@media (max-width: 1350px) {
+  .dialof-right {
+    img {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 1224px) {
+  .dialog {
+    padding: 40px;
+  }
+
+  .content-dialog {
+    flex-direction: column-reverse;
+  }
+
+  .dialof-right {
+    width: 100%;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .dialof-left {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 16px;
+    gap: 16px;
+  }
+
+  .btn-close,
+  .btn-next {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .title {
+    .index-title {
+      line-height: 72px;
+      font-size: 72px;
+      padding-bottom: 8px;
+    }
+    h2 {
+      line-height: 40px;
+    }
+  }
+
+  .btn-box {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+// @media (max-width: 605px) {
+//   .dialof-right {
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }

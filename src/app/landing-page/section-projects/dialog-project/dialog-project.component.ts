@@ -1,12 +1,16 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import {
+  MAT_DIALOG_DATA,
+  MatDialogContent,
+  MatDialogRef,
+} from '@angular/material/dialog';
 import { Project } from '../../../../assets/interfaces/project.interface';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dialog-project',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, MatDialogContent],
   templateUrl: './dialog-project.component.html',
   styleUrl: './dialog-project.component.scss',
 })
