@@ -1,17 +1,6 @@
 @import "./../../../assets/styles/colors.scss";
 
-section {
-  background-color: $main-bg;
-  padding-top: 92px;
-  padding-bottom: 92px;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  font-family: "Karla", sans-serif;
-}
-
-.section-projects {
+#section-projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,6 +49,9 @@ section {
   &:first-child .project-img {
     top: 0;
   }
+  &:last-child .project-data {
+    border-bottom: 1px solid $main-green;
+  }
 }
 
 .project-data {
@@ -89,11 +81,6 @@ section {
     margin: 0;
     height: 24px;
   }
-
-  &:last-child {
-    border-bottom: 1px solid $main-green;
-  }
-
   &:hover ~ .project-img {
     display: block !important;
   }
@@ -116,4 +103,32 @@ h4,
 h2 {
   text-align: start;
   margin: 0;
+}
+
+@media (max-width: 1224px) {
+  .project-data {
+    width: 100%;
+    &:hover ~ .project-img {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .project-data {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 40px 0;
+  }
+
+  .technologies-box {
+    .technologie {
+      padding-left: 4px;
+      padding-right: 4px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
 }

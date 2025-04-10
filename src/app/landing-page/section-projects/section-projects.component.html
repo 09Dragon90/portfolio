@@ -1,43 +1,41 @@
-<section id="section-projects">
-  <div class="content section-projects">
-    <div>
-      <h4>{{ "Projects.headline" | translate }}</h4>
-      <h2>{{ "Projects.title" | translate }}</h2>
-    </div>
-    <p>
-      {{ "Projects.description" | translate }}
-    </p>
-    <div class="project-list">
-      @for (project of projects; track i;let i = $index) {
-      <div class="project" (click)="openDialog(i)">
-        <div class="project-data">
-          <p>
-            {{ project.name }}
-            <img
-              style="display: none"
-              src="./../../../assets/icons/arrow_outward.png"
-              alt="arrow"
-            />
-          </p>
-          <div class="technologies-box">
-            @for (technologie of project.technologies; track $index) {
-            <div class="technologie">
-              {{ technologie }}
-            </div>
-            }
-          </div>
-        </div>
-
-        <div style="display: none" class="project-img">
+<section id="section-projects" class="content">
+  <div>
+    <h4>{{ "Projects.headline" | translate }}</h4>
+    <h2>{{ "Projects.title" | translate }}</h2>
+  </div>
+  <p>
+    {{ "Projects.description" | translate }}
+  </p>
+  <div class="project-list">
+    @for (project of projects; track i;let i = $index) {
+    <div class="project" (click)="openDialog(i)">
+      <div class="project-data">
+        <p>
+          {{ project.name }}
           <img
-            class="bg-img"
-            src="./../../../assets/images/hover_project.png"
-            alt=""
+            style="display: none"
+            src="./../../../assets/icons/arrow_outward.png"
+            alt="arrow"
           />
-          <img src="./../../../assets/images/{{ project.images }}" alt="" />
+        </p>
+        <div class="technologies-box">
+          @for (technologie of project.technologies; track $index) {
+          <div class="technologie">
+            {{ technologie }}
+          </div>
+          }
         </div>
       </div>
-      }
+
+      <div style="display: none" class="project-img">
+        <img
+          class="bg-img"
+          src="./../../../assets/images/hover_project.png"
+          alt=""
+        />
+        <img src="./../../../assets/images/{{ project.images }}" alt="" />
+      </div>
     </div>
+    }
   </div>
 </section>
