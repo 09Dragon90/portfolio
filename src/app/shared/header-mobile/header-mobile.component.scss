@@ -1,0 +1,35 @@
+header {
+  margin-top: 32px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-menue {
+  height: 48px;
+  width: 48px;
+  img {
+    height: 90%;
+    width: 90%;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(96%) sepia(65%) saturate(988%)
+        hue-rotate(88deg) brightness(87%) contrast(85%);
+    }
+  }
+}
+
+.img-logo {
+  height: 100%;
+  width: 125px;
+  background-image: url(./../../../assets/images/logo_klein.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  &:hover {
+    background-image: url(./../../../assets/images/logo_klein_wof.png);
+  }
+}
