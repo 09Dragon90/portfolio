@@ -1,5 +1,10 @@
 <section>
+  @if ( isSmallScreen() ) {
   <app-header></app-header>
+  }@else {
+  <app-header-mobile></app-header-mobile>
+  }
+
   <div class="content section-title">
     <div class="coloums">
       <div class="col">
