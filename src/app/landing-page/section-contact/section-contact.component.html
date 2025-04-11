@@ -1,106 +1,105 @@
-<section id="section-contact">
-  <div class="content section-contact">
-    <div class="contact-left">
-      <div>
-        <h4>{{ "Contact.headline" | translate }}</h4>
-        <h2>{{ "Contact.title" | translate }}</h2>
+<section class="content" id="section-contact">
+  <div class="contact-left">
+    <div>
+      <h4>{{ "Contact.headline" | translate }}</h4>
+      <h2>{{ "Contact.title" | translate }}</h2>
+    </div>
+    <p class="headline">
+      {{ "Contact.headline2" | translate }}
+    </p>
+    <p>
+      {{ "Contact.description" | translate }}
+    </p>
+    <p>
+      {{ "Contact.description2" | translate }}
+      <span>{{ "Contact.description3" | translate }}</span>
+    </p>
+  </div>
+  <div class="contact-right">
+    <form (ngSubmit)="onSubmit(formContact)" #formContact="ngForm">
+      <div class="row">
+        <label for="name">{{ "Contact.Form.Name.headline" | translate }}</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          [(ngModel)]="dataContact.name"
+          required
+          #name="ngModel"
+          minlength="5"
+          placeholder="{{ 'Contact.Form.Name.placeholder' | translate }}"
+        />
+        @if (!name.valid && name.touched) {
+        <p>{{ "Contact.Form.Name.error" | translate }}</p>
+        }
       </div>
-      <p class="headline">
-        {{ "Contact.headline2" | translate }}
-      </p>
-      <p>
-        {{ "Contact.description" | translate }}
-      </p>
-      <p>
-        {{ "Contact.description2" | translate }}
-        <span>{{ "Contact.description3" | translate }}</span>
-      </p>
-    </div>
-    <div class="contact-right">
-      <form (ngSubmit)="onSubmit(formContact)" #formContact="ngForm">
-        <div class="row">
-          <label for="name">{{
-            "Contact.Form.Name.headline" | translate
-          }}</label>
+      <div class="row">
+        <label for="email">{{
+          "Contact.Form.Email.headline" | translate
+        }}</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="dataContact.mail"
+          required
+          #mail="ngModel"
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          placeholder="{{ 'Contact.Form.Email.placeholder' | translate }}"
+        />
+        @if (!mail.valid && mail.touched) {
+        <p>{{ "Contact.Form.Email.error" | translate }}</p>
+        }
+      </div>
+      <div class="row">
+        <label for="message">{{
+          "Contact.Form.Message.headline" | translate
+        }}</label>
+        <textarea
+          type="text"
+          id="message"
+          name="message"
+          [(ngModel)]="dataContact.message"
+          required
+          minlength="5"
+          #message="ngModel"
+          placeholder="{{ 'Contact.Form.Message.placeholder' | translate }}"
+        ></textarea>
+        @if (!message.valid && message.touched) {
+        <p>{{ "Contact.Form.Message.error" | translate }}</p>
+        }
+      </div>
+      <div class="privacyPolicy">
+        <label for="privacyPolicy" class="btn-checkbox">
           <input
-            type="text"
-            id="name"
-            name="name"
-            [(ngModel)]="dataContact.name"
+            type="checkbox"
+            id="privacyPolicy"
+            name="privacyPolicy"
             required
-            #name="ngModel"
-            minlength="5"
-            placeholder="{{ 'Contact.Form.Name.placeholder' | translate }}"
+            ngModel
+            #privacyPolicy="ngModel"
           />
-          @if (!name.valid && name.touched) {
-          <p>{{ "Contact.Form.Name.error" | translate }}</p>
-          }
-        </div>
-        <div class="row">
-          <label for="email">{{
-            "Contact.Form.Email.headline" | translate
-          }}</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            [(ngModel)]="dataContact.mail"
-            required
-            #mail="ngModel"
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-            placeholder="{{ 'Contact.Form.Email.placeholder' | translate }}"
-          />
-          @if (!mail.valid && mail.touched) {
-          <p>{{ "Contact.Form.Email.error" | translate }}</p>
-          }
-        </div>
-        <div class="row">
-          <label for="message">{{
-            "Contact.Form.Message.headline" | translate
-          }}</label>
-          <textarea
-            type="text"
-            id="message"
-            name="message"
-            [(ngModel)]="dataContact.message"
-            required
-            minlength="5"
-            #message="ngModel"
-            placeholder="{{ 'Contact.Form.Message.placeholder' | translate }}"
-          ></textarea>
-          @if (!message.valid && message.touched) {
-          <p>{{ "Contact.Form.Message.error" | translate }}</p>
-          }
-        </div>
-        <div class="privacyPolicy">
-          <label for="privacyPolicy" class="btn-checkbox">
-            <input
-              type="checkbox"
-              id="privacyPolicy"
-              name="privacyPolicy"
-              required
-              ngModel
-              #privacyPolicy="ngModel"
-            />
-            <span class="checkmark"></span>
-            {{ "Contact.Form.PrivacyPolicy.text1" | translate }}
-            <span class="green" (click)="openPrivacyPolicy($event)"
-              >{{ "Contact.Form.PrivacyPolicy.text2" | translate }}
-            </span>
-            {{ "Contact.Form.PrivacyPolicy.text3" | translate }}
-          </label>
-          @if (!privacyPolicy.valid && privacyPolicy.dirty ) {
-          <p>{{ "Contact.Form.PrivacyPolicy.error" | translate }}</p>
-          }
-        </div>
-        <div class="btn-box">
-          <button class="btn-title" type="submit">
-            <span>
-              {{ "Contact.Form.btn" | translate }}
-            </span>
-          </button>
-        </div>
-      </form>
-    </div>
+          <span class="checkmark"></span>
+          <span class="checkmark-text">
+            {{ "Contact.Form.PrivacyPolicy.text1" | translate
+            }}<span class="green" (click)="openPrivacyPolicy($event)">{{
+              "Contact.Form.PrivacyPolicy.text2" | translate
+            }}</span
+            >{{ "Contact.Form.PrivacyPolicy.text3" | translate }}
+          </span>
+        </label>
+        @if (!privacyPolicy.valid && privacyPolicy.dirty ) {
+        <p>{{ "Contact.Form.PrivacyPolicy.error" | translate }}</p>
+
+        }
+      </div>
+      <div class="btn-box">
+        <button class="btn-title" type="submit">
+          <span>
+            {{ "Contact.Form.btn" | translate }}
+          </span>
+        </button>
+      </div>
+    </form>
   </div>
 </section>
