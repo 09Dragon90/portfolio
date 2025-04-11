@@ -1,54 +1,51 @@
-<section>
-  @if ( isSmallScreen() ) {
-  <app-header></app-header>
-  }@else {
-  <app-header-mobile></app-header-mobile>
-  }
-
-  <div class="content section-title">
-    <div class="coloums">
-      <div class="col">
-        <img
-          src="./../../../assets/images/scroll_down.png"
-          alt="Images_Scroll_Down"
-        />
-        <div class="seperator-left"></div>
-      </div>
-    </div>
-    <div class="title">
-      <h3>Frontend Developer</h3>
-      <h1>Niko Helwig</h1>
-      <div class="btn-title-box">
-        <a class="btn-title" href="#section-projects"
-          ><span>{{ "Title.btn1" | translate }}</span></a
-        >
-        <a class="btn-title" href="#section-contact"
-          ><span>{{ "Title.btn2" | translate }}</span></a
-        >
-      </div>
-    </div>
-    <div class="coloums">
-      <div class="col">
-        <a class="link-mail" href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
-        <a href="https://github.com/09Dragon90" target="_blank">
-          <img src="./../../../assets/icons/GitHub.png" alt="icon_github" />
-          <div class="point"></div>
-        </a>
-        <a href="https://de.linkedin.com/" target="_blank">
-          <img src="./../../../assets/icons/Linkedin.png" alt="icon_linkedin" />
-          <div class="point"></div>
-        </a>
-        <div class="seperator-right"></div>
-      </div>
+@if ( isSmallScreen() ) {
+<app-header></app-header>
+}@else {
+<app-header-mobile></app-header-mobile>
+}
+<section class="content" id="section-title">
+  <div class="coloums">
+    <div class="col">
+      <img
+        src="./../../../assets/images/scroll_down.png"
+        alt="Images_Scroll_Down"
+      />
+      <div class="seperator-left"></div>
     </div>
   </div>
-  <div class="marquee">
-    <div class="marquee-text">
-      <div class="point"></div>
-      @for (message of (messages | keyvalue); track message.key) {
-      <span>{{ message.value }}</span>
-      <div class="point"></div>
-      }
+  <div class="title">
+    <h3>Frontend Developer</h3>
+    <h1>Niko Helwig</h1>
+    <div class="btn-title-box">
+      <a class="btn-title" href="#section-projects"
+        ><span>{{ "Title.btn1" | translate }}</span></a
+      >
+      <a class="btn-title" href="#section-contact"
+        ><span>{{ "Title.btn2" | translate }}</span></a
+      >
+    </div>
+  </div>
+  <div class="coloums">
+    <div class="col">
+      <a class="link-mail" href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
+      <a href="https://github.com/09Dragon90" target="_blank">
+        <img src="./../../../assets/icons/GitHub.png" alt="icon_github" />
+        <div class="point"></div>
+      </a>
+      <a href="https://de.linkedin.com/" target="_blank">
+        <img src="./../../../assets/icons/Linkedin.png" alt="icon_linkedin" />
+        <div class="point"></div>
+      </a>
+      <div class="seperator-right"></div>
     </div>
   </div>
 </section>
+<div class="marquee">
+  <div class="marquee-text">
+    <div class="point"></div>
+    @for (message of (messages | keyvalue); track message.key) {
+    <span>{{ message.value }}</span>
+    <div class="point"></div>
+    }
+  </div>
+</div>
