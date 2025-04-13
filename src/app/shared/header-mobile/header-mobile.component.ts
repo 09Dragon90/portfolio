@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MenueComponent } from './menue/menue.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-header-mobile',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
   templateUrl: './header-mobile.component.html',
   styleUrl: './header-mobile.component.scss',
 })
-export class HeaderMobileComponent {}
+export class HeaderMobileComponent {
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(MenueComponent, {
+      position: { right: '24px', top: '60px' },
+      panelClass: 'dialog-project',
+    });
+  }
+}

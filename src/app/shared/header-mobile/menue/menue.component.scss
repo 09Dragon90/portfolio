@@ -1,0 +1,62 @@
+@import "./../../../../assets/styles/colors.scss";
+
+.dialog {
+  background: linear-gradient(58.22deg, #1c1c1c 18.26%, #08463b 93.28%);
+  padding: 16px 30px;
+  .menue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.btn-language {
+  position: relative;
+  border: 2px solid $main-green;
+  height: 24px;
+  width: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 0 10px;
+  cursor: pointer;
+  &:hover {
+    border-color: white;
+  }
+  p {
+    margin: 0;
+    z-index: 1;
+    color: $main-green;
+  }
+  .active-language {
+    color: white;
+  }
+  .slider {
+    position: absolute;
+    left: -2px;
+    width: 44px;
+    border-radius: 12px;
+    height: inherit;
+    background-color: $main-green;
+    transition: all 75ms ease-in-out;
+    &.active {
+      left: 40px;
+    }
+  }
+}
+
+.link {
+  position: relative;
+  font-size: 20px;
+  &:hover .point {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: $main-green;
+    bottom: -10px;
+    left: calc(50% - 4px);
+  }
+}
