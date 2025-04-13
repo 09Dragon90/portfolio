@@ -27,7 +27,14 @@
   </div>
   <div class="coloums">
     <div class="col">
+      @if ( isSmallScreen() ) {
       <a class="link-mail" href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
+      }@else {
+      <a href="mailto:nhelwig@gmx.de">
+        <img src="./../../../assets/icons/Mail.png" alt="icon_mail" />
+        <div class="point"></div>
+      </a>
+      }
       <a href="https://github.com/09Dragon90" target="_blank">
         <img src="./../../../assets/icons/GitHub.png" alt="icon_github" />
         <div class="point"></div>

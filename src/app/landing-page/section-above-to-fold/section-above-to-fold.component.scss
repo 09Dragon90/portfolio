@@ -137,11 +137,10 @@ app-header-mobile {
 @media (max-width: 780px) {
   #section-title {
     display: grid;
-    justify-items: unset;
     align-items: unset;
     justify-items: stretch;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
 
   .coloums {
@@ -167,7 +166,18 @@ app-header-mobile {
     grid-row-start: 1;
     grid-row-end: 2;
     h1 {
-      font-size: 62px;
+      font-size: 55px;
+    }
+  }
+  .col {
+    gap: 16px;
+    height: 100%;
+    .seperator-left {
+      height: 100%;
+    }
+
+    .seperator-right {
+      height: 100%;
     }
   }
 }
