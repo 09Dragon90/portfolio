@@ -152,3 +152,17 @@ body {
     font-size: 16px;
   }
 }
+
+@media (max-width: 400px) {
+  .btn-title {
+    & span {
+      font-size: 16px;
+      padding: 0 8px;
+    }
+    &:hover {
+      & span {
+        padding: 0 8px;
+      }
+    }
+  }
+}
