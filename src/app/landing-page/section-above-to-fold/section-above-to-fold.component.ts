@@ -1,8 +1,9 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { HeaderComponent } from './../../shared/header/header.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { HeaderMobileComponent } from '../../shared/header-mobile/header-mobile.component';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-section-above-to-fold',
@@ -25,11 +26,12 @@ export class SectionAboveToFoldComponent {
   ];
 
   messages: Record<string, string> = {};
+  translation = inject(TranslationService);
 
   constructor(private translate: TranslateService) {}
 
   ngOnInit() {
-    this.loadMarquee(localStorage.getItem('language') || 'de');
+    this.loadMarquee(this.translation.getLanguage());
     this.translate.onLangChange.subscribe((event) => {
       this.loadMarquee(event.lang);
     });

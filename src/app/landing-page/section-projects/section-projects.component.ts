@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { DialogProjectComponent } from './dialog-project/dialog-project.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Project } from '../../../assets/interfaces/project.interface';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-section-projects',
@@ -14,6 +15,7 @@ import { Project } from '../../../assets/interfaces/project.interface';
 export class SectionProjectsComponent {
   @Input() index: number = 0;
   projects: Project[] = [];
+  translation = inject(TranslationService);
 
   constructor(private translate: TranslateService, public dialog: MatDialog) {}
 
@@ -25,7 +27,7 @@ export class SectionProjectsComponent {
   }
 
   ngOnInit() {
-    this.loadProjects(localStorage.getItem('language') || 'de');
+    this.loadProjects(this.translation.getLanguage());
     this.translate.onLangChange.subscribe((event) => {
       this.loadProjects(event.lang);
     });

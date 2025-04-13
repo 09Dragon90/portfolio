@@ -5,7 +5,8 @@ import { TranslateService } from '@ngx-translate/core';
   providedIn: 'root',
 })
 export class TranslationService {
-  language: 'de' | 'en' = 'de';
+  defaultLanguage: 'de' | 'en' = 'en';
+  language: 'de' | 'en' = this.defaultLanguage;
 
   constructor(private translate: TranslateService) {
     this.loadLanguage();
@@ -21,10 +22,14 @@ export class TranslationService {
     localStorage.setItem('language', this.language);
   }
 
+  getLanguage() {
+    return localStorage.getItem('language') || this.defaultLanguage;
+  }
+
   loadLanguage() {
     let language = localStorage.getItem('language');
     if (language == null) {
-      this.translate.setDefaultLang('de');
+      this.translate.setDefaultLang(this.defaultLanguage);
       this.saveLanguage();
     } else if (language == 'de' || language == 'en') {
       this.translate.setDefaultLang(language);
