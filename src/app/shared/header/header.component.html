@@ -1,9 +1,9 @@
 <header class="content">
   <div class="menue">
-    <div class="btn-language" (click)="changeLanguage()">
-      <div class="slider" [class.active]="language == 'en'"></div>
-      <p [class.active-language]="language == 'de'">DE</p>
-      <p [class.active-language]="language == 'en'">EN</p>
+    <div class="btn-language" (click)="translation.changeLanguage()">
+      <div class="slider" [class.active]="translation.language == 'en'"></div>
+      <p [class.active-language]="translation.language == 'de'">DE</p>
+      <p [class.active-language]="translation.language == 'en'">EN</p>
     </div>
     <div class="link">
       <a href="#section-about-me">{{ "Header.anker1" | translate }}</a>
