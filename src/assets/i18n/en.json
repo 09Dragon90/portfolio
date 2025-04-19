@@ -8,21 +8,21 @@
   "Marquee": {
     "Point0": "Avalibale for remote work",
     "Point1": "Frontend Developer",
-    "Point2": "Base in Munich",
+    "Point2": "Base in Rheinböllen",
     "Point3": "Open to Work"
   },
   "AboutMe": {
     "title": "About me",
     "headline": "Who I Am",
-    "description": "Hey there, I'm Lukas! Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-    "location": "Where are you based? Would you be open to working remotely or potentially relocating?",
-    "cognition": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
-    "quality": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+    "description": "My name is Niko and I enjoy programming. I particularly enjoy developing solutions that simplify or automate processes. I am motivated by using technology to solve problems and make things more efficient. I value clear structures and well thought-out approaches.",
+    "location": "I live in a house in Rheinböllen - nice and quiet, perfect for coding. Working remotely suits me perfectly because I like to be flexible and prefer to work where I feel comfortable.",
+    "cognition": "I am always keen to expand my knowledge and learn new technologies and ways of working. Challenges motivate me to grow continuously and to focus on new, innovative solutions.",
+    "quality": "I am solution-oriented, think analytically and persevere until a good solution is found. I enjoy working in a team, sharing my knowledge and find it exciting to develop and implement new ideas together."
   },
   "Skills": {
     "title": "Skill Set",
     "headline": "Technologies",
-    "description": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.",
+    "description": "I am currently working intensively with Angular and have a lot of experience with it. But I also regularly work with Firebase, integrate APIs and use Git for version control. I'm always curious about new technologies and like to try out new tools - for me, constant learning is simply part of development.",
     "skill1": "You need ",
     "skill2": "another skill?",
     "contactMe": "Feel free to contact me. I look forward to expanding on my previous knowledge.",

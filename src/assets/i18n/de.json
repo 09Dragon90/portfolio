@@ -11,18 +11,26 @@
   "Marquee": {
     "Point0": "Verfügbar für Remote-Arbeit",
     "Point1": "Frontend-Entwickler",
-    "Point2": "Ansässig in München",
+    "Point2": "Ansässig in Rheinböllen",
     "Point3": "Offen für neue Herausforderungen"
+  },
+  "AboutMe": {
+    "title": "Über mich",
+    "headline": "Wer bin Ich",
+    "description": "Mein Name ist Niko und ich habe Spaß am Programmieren. Besonders gerne entwickle ich Lösungen, die Abläufe vereinfachen oder automatisieren. Mich motiviert es, durch Technik Probleme zu lösen und Dinge effizienter zu gestalten. Dabei lege ich Wert auf klare Strukturen und durchdachte Ansätze.",
+    "location": "Ich wohne in einem Haus in Rheinböllen – schön ruhig, perfekt zum Coden. Remote zu arbeiten passt super zu mir, weil ich gerne flexibel bin und am liebsten dort arbeite, wo ich mich wohlfühle.",
+    "cognition": "Ich bin stets bestrebt, mein Wissen zu erweitern und neue Technologien sowie Arbeitsweisen zu erlernen. Herausforderungen motivieren mich, kontinuierlich zu wachsen und mich an neuen, innovativen Lösungen zu orientieren.",
+    "quality": "Ich bin lösungsorientiert, denke analytisch und bleibe hartnäckig dran, bis eine gute Lösung gefunden ist. Im Team arbeite ich gerne zusammen, teile mein Wissen und finde es spannend, gemeinsam neue Ideen zu entwickeln und umzusetzen."
   },
   "Skills": {
     "title": "Skill Set",
     "headline": "Technologies",
-    "description": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.",
-    "skill1": "You need ",
-    "skill2": "another skill?",
-    "contactMe": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "description": "Aktuell arbeite ich intensiv mit Angular und habe darin viel Erfahrung. Aber ich arbeite auch regelmäßig mit Firebase, integriere APIs und nutze Git für Versionskontrolle. Ich bin immer neugierig auf neue Technologien und probiere gerne neue Tools aus – ständiges Lernen gehört für mich einfach zum Entwickeln dazu.",
+    "skill1": "Sie benötigen ",
+    "skill2": "andere Fähigkeiten?",
+    "contactMe": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
     "btn": "Let's Talk",
-    "popup": "I have a special interest in learning"
+    "popup": "Ich habe besonderes interesse an"
   },
   "Projects": {
     "title": "Featured Projects",
