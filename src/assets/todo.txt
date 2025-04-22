@@ -1,1 +1,2 @@
-TODO Übersetzung in service auslagern
+TODO Dialog scrollt immer ans ende bei responsiv
+TODO Dialog scroll ausschalten bei voller äuflösung
