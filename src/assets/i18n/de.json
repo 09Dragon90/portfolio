@@ -67,7 +67,7 @@
     ]
   },
   "Contact": {
-    "title": "Lass uns zusammenarbeiten",
+    "title": "Lass uns zusammen Arbeiten",
     "headline": "Kontaktiere mich",
     "headline2": "Ich freue mich darauf, von dir zu hören!",
     "description": "Du suchst Unterstützung für dein Projekt? Ich bin offen für spannende Herausforderungen – besonders im Bereich Frontend-Entwicklung. Gemeinsam können wir Lösungen entwickeln, die wirklich etwas bewegen. Lass uns ins Gespräch kommen und schauen, wie ich dein Team oder Projekt mit meiner Erfahrung bereichern kann.",
@@ -86,7 +86,7 @@
       },
       "Message": {
         "headline": "Wie kann ich dir helfen?",
-        "placeholder": "Hallo Lukas, ich interessiere mich für...",
+        "placeholder": "Hallo Niko, ich interessiere mich für...",
         "error": "Was möchtest du entwickeln lassen?"
       },
       "PrivacyPolicy": {
