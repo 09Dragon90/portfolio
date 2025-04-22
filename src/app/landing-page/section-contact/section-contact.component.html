@@ -94,7 +94,11 @@
         }
       </div>
       <div class="btn-box">
-        <button class="btn-title" type="submit">
+        <button
+          class="btn-contact"
+          type="submit"
+          [disabled]="formContact.invalid"
+        >
           <span>
             {{ "Contact.Form.btn" | translate }}
           </span>
