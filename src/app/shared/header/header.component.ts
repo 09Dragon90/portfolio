@@ -14,4 +14,8 @@ export class HeaderComponent {
   translation = inject(TranslationService);
 
   constructor() {}
+
+  reload() {
+    window.location.reload();
+  }
 }
