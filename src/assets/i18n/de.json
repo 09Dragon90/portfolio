@@ -35,11 +35,13 @@
   "Projects": {
     "title": "Ausgewählte Projekte",
     "headline": "Portfolio",
+    "headlineDialog": "Worum geht es bei diesem Projekt?",
     "description": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "nextBtnDialog": "Nächstes Projekt",
     "dataProjects": [
       {
         "name": "Join",
+
         "technologies": ["HTML", "CSS", "JavaScript", "Firebase"],
         "images": "join.png",
         "description": "Taskmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
