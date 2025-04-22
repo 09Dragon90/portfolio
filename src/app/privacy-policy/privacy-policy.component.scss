@@ -12,8 +12,13 @@
 h2 {
   font-size: 28px;
   padding-top: 16px;
+  text-align: left;
 }
 
 a {
   text-decoration: underline;
+  overflow-wrap: anywhere;
+  &:hover {
+    color: #3dcfb6;
+  }
 }

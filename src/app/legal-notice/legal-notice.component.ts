@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-legal-notice',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss',
 })
-export class LegalNoticeComponent {}
+export class LegalNoticeComponent {
+  translation = inject(TranslationService);
+  currentLanguage: string;
+  constructor() {
+    this.currentLanguage = this.translation.getLanguage();
+  }
+}
