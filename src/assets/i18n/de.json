@@ -33,65 +33,72 @@
     "popup": "Ich habe besonderes interesse an"
   },
   "Projects": {
-    "title": "Featured Projects",
+    "title": "Ausgewählte Projekte",
     "headline": "Portfolio",
-    "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "description": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "nextBtnDialog": "Nächstes Projekt",
     "dataProjects": [
       {
         "name": "Join",
         "technologies": ["HTML", "CSS", "JavaScript", "Firebase"],
         "images": "join.png",
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "github": "",
+        "description": "Taskmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "github": "https://github.com/09Dragon90/join",
         "link": ""
       },
       {
         "name": "El Pollo Loco",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "images": "el_pollo_loco.png",
-        "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "github": "",
+        "description": "Jump-, run- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "github": "https://github.com/09Dragon90/el_pollo_loco",
         "link": ""
       },
       {
         "name": "DA Bubble",
         "technologies": ["Angular", "TypeScript", "SCSS", "Firebase"],
         "images": "da_bubble.png",
-        "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+        "description": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
         "github": "",
         "link": ""
       }
     ]
   },
   "Contact": {
-    "title": "Let's work together",
-    "headline": "Contact me",
-    "headline2": "Got a problem to solve?",
-    "description": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
-    "description2": "Need a Frontend developer?",
-    "description3": "Let’s talk!",
+    "title": "Lass uns zusammenarbeiten",
+    "headline": "Kontaktiere mich",
+    "headline2": "Ich freue mich darauf, von dir zu hören!",
+    "description": "Du suchst Unterstützung für dein Projekt? Ich bin offen für spannende Herausforderungen – besonders im Bereich Frontend-Entwicklung. Gemeinsam können wir Lösungen entwickeln, die wirklich etwas bewegen. Lass uns ins Gespräch kommen und schauen, wie ich dein Team oder Projekt mit meiner Erfahrung bereichern kann.",
+    "description2": "Du brauchst einen Frontend-Entwickler?",
+    "description3": "Lass uns reden!",
     "Form": {
       "Name": {
-        "headline": "What's your name?",
-        "placeholder": "Your name goes here",
-        "error": "Oops! it seems your name is missing"
+        "headline": "Wie heißt du?",
+        "placeholder": "Dein Name kommt hierhin",
+        "error": "Ups! Dein Name fehlt wohl."
       },
       "Email": {
-        "headline": "What's your email?",
-        "placeholder": "youremail@email.com",
-        "error": "Hoppla! your email is required"
+        "headline": "Wie lautet deine E-Mail-Adresse?",
+        "placeholder": "deinemail@email.com",
+        "error": "Hoppla! Deine E-Mail-Adresse wird benötigt."
       },
       "Message": {
-        "headline": "How can I help you?",
-        "placeholder": "Hello Lukas, I am interested in...",
-        "error": "What do you need to develop?"
+        "headline": "Wie kann ich dir helfen?",
+        "placeholder": "Hallo Lukas, ich interessiere mich für...",
+        "error": "Was möchtest du entwickeln lassen?"
       },
       "PrivacyPolicy": {
-        "text1": "I've read the ",
-        "text2": "privacy policy ",
-        "text3": "and agree to the processing of my data as outlined.",
-        "error": "Please accept the privacy policy."
-      }
+        "text1": "Ich habe die ",
+        "text2": "Datenschutzerklärung ",
+        "text3": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+        "error": "Bitte akzeptiere die Datenschutzerklärung."
+      },
+      "btn": "Sag Hallo ;)"
     }
+  },
+  "Footer": {
+    "text1": "Web Developer",
+    "text2": "Rheinböllen Deutschland",
+    "anker": "Legal Notice"
   }
 }
