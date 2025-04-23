@@ -42,7 +42,7 @@
         "images": "join.png",
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "github": "https://github.com/09Dragon90/join",
-        "link": ""
+        "link": "https://join.niko-helwig.de"
       },
       {
         "name": "El Pollo Loco",
@@ -50,15 +50,15 @@
         "images": "el_pollo_loco.png",
         "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
         "github": "https://github.com/09Dragon90/el_pollo_loco",
-        "link": ""
+        "link": "https://el-pollo-loco.niko-helwig.de"
       },
       {
         "name": "DA Bubble",
         "technologies": ["Angular", "TypeScript", "SCSS", "Firebase"],
         "images": "da_bubble.png",
         "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-        "github": "",
-        "link": ""
+        "github": "https://github.com/09Dragon90",
+        "link": "https://da-bubble.niko-helwig.de"
       }
     ]
   },
