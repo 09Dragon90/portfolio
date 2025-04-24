@@ -5,7 +5,7 @@
     "anker3": "Projekte"
   },
   "Title": {
-    "btn1": "Überprüfe meine Arbeit",
+    "btn1": "Meine Projekte",
     "btn2": "Kontaktiere mich"
   },
   "Marquee": {
@@ -41,7 +41,6 @@
     "dataProjects": [
       {
         "name": "Join",
-
         "technologies": ["HTML", "CSS", "JavaScript", "Firebase"],
         "images": "join.png",
         "description": "Taskmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
