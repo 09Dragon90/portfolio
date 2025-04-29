@@ -6,28 +6,29 @@
   },
   "Title": {
     "btn1": "Meine Projekte",
-    "btn2": "Kontaktiere mich"
+    "btn2": "Kontaktiere mich",
+    "work": "Frontend Entwickler"
   },
   "Marquee": {
     "Point0": "Verfügbar für Remote-Arbeit",
-    "Point1": "Frontend-Entwickler",
+    "Point1": "Frontend Entwickler",
     "Point2": "Ansässig in Rheinböllen",
     "Point3": "Offen für neue Herausforderungen"
   },
   "AboutMe": {
     "title": "Über mich",
     "headline": "Wer bin Ich",
-    "description": "Mein Name ist Niko und ich habe Spaß am Programmieren. Besonders gerne entwickle ich Lösungen, die Abläufe vereinfachen oder automatisieren. Mich motiviert es, durch Technik Probleme zu lösen und Dinge effizienter zu gestalten. Dabei lege ich Wert auf klare Strukturen und durchdachte Ansätze.",
-    "location": "Ich wohne in einem Haus in Rheinböllen – schön ruhig, perfekt zum Coden. Remote zu arbeiten passt super zu mir, weil ich gerne flexibel bin und am liebsten dort arbeite, wo ich mich wohlfühle.",
-    "cognition": "Ich bin stets bestrebt, mein Wissen zu erweitern und neue Technologien sowie Arbeitsweisen zu erlernen. Herausforderungen motivieren mich, kontinuierlich zu wachsen und mich an neuen, innovativen Lösungen zu orientieren.",
-    "quality": "Ich bin lösungsorientiert, denke analytisch und bleibe hartnäckig dran, bis eine gute Lösung gefunden ist. Im Team arbeite ich gerne zusammen, teile mein Wissen und finde es spannend, gemeinsam neue Ideen zu entwickeln und umzusetzen."
+    "description": "Mein Name ist Niko und das Programmieren ist meine Leidenschaft. Meine Begeisterung gilt der Entwicklung von Lösungen, um Abläufe zu vereinfachen oder zu automatisieren. Mich motiviert es, durch Technik Probleme zu lösen und Dinge effizienter zu gestalten. Dabei lege ich insbesondere Wert auf klare Strukturen und durchdachte Abläufe.",
+    "location": "Ich lebe in einem Eigenheim in Rheinböllen, einer Stadt am Rande des schönen Hunsrücks – ruhig gelegen und daher perfekt zum Coden. Perfekt um Remote zu arbeiten.",
+    "cognition": "Durch regelmäßige Fortbildung erweitere ich mein Wissen und erlerne neue Technologien sowie Arbeitsweisen. Herausforderungen motivieren mich, kontinuierlich zu wachsen und mich an neuen, innovativen Lösungen zu orientieren.",
+    "quality": "Durch mein lösungsorientiertes Handeln, denke ich analytisch und ausdauernd, bis eine gute und zufriedenstellende Lösung gefunden ist. Im Team arbeite ich gerne zusammen, teile mein Wissen und finde es spannend, gemeinsam neue Ideen zu entwickeln und umzusetzen."
   },
   "Skills": {
     "title": "Skill Set",
     "headline": "Technologies",
-    "description": "Aktuell arbeite ich intensiv mit Angular und habe darin viel Erfahrung. Aber ich arbeite auch regelmäßig mit Firebase, integriere APIs und nutze Git für Versionskontrolle. Ich bin immer neugierig auf neue Technologien und probiere gerne neue Tools aus – ständiges Lernen gehört für mich einfach zum Entwickeln dazu.",
-    "skill1": "Sie benötigen ",
-    "skill2": "andere Fähigkeiten?",
+    "description": "Aktuell arbeite ich intensiv mit Angular und habe aufgrund meiner bisherigen Tätigkeiten mit diesem Framework viel Erfahrungen gesammelt. Weiterhin arbeite ich regelmäßig mit Firebase, integriere APIs und Git für Versionskontrolle. Neuen Technologien und neuen Tools begegne ich mit Begeisterung. Ständiges Lernen und weiterbilden gehört für mich zum Entwickeln dazu.",
+    "skill1": "Fehlt Ihnen ",
+    "skill2": "ein Skill?",
     "contactMe": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
     "btn": "Let's Talk",
     "popup": "Ich habe besonderes interesse an"
@@ -69,8 +70,8 @@
     "title": "Lass uns zusammen Arbeiten",
     "headline": "Kontaktiere mich",
     "headline2": "Ich freue mich darauf, von dir zu hören!",
-    "description": "Du suchst Unterstützung für dein Projekt? Ich bin offen für spannende Herausforderungen – besonders im Bereich Frontend-Entwicklung. Gemeinsam können wir Lösungen entwickeln, die wirklich etwas bewegen. Lass uns ins Gespräch kommen und schauen, wie ich dein Team oder Projekt mit meiner Erfahrung bereichern kann.",
-    "description2": "Du brauchst einen Frontend-Entwickler?",
+    "description": "Sie suchen Unterstützung für dein Projekt? Ich bin offen für spannende Herausforderungen – besonders im Bereich Frontend-Entwicklung. Gemeinsam können wir Lösungen entwickeln, die wirklich etwas bewegen. Lass uns ins Gespräch kommen und schauen, wie ich dein Team oder Projekt mit meiner Erfahrung bereichern kann.",
+    "description2": "Sie brauchen einen Frontend-Entwickler?",
     "description3": "Lass uns reden!",
     "Form": {
       "Name": {

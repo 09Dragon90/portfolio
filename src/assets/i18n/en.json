@@ -4,7 +4,11 @@
     "anker2": "Skills",
     "anker3": "Projects"
   },
-  "Title": { "btn1": "Check my work", "btn2": "Contact me" },
+  "Title": {
+    "btn1": "Check my work",
+    "btn2": "Contact me",
+    "work": "Frontend Developer"
+  },
   "Marquee": {
     "Point0": "Avalibale for remote work",
     "Point1": "Frontend Developer",
@@ -12,17 +16,17 @@
     "Point3": "Open to Work"
   },
   "AboutMe": {
-    "title": "About me",
+    "title": "About Me",
     "headline": "Who I Am",
-    "description": "My name is Niko and I enjoy programming. I particularly enjoy developing solutions that simplify or automate processes. I am motivated by using technology to solve problems and make things more efficient. I value clear structures and well thought-out approaches.",
-    "location": "I live in a house in Rheinböllen - nice and quiet, perfect for coding. Working remotely suits me perfectly because I like to be flexible and prefer to work where I feel comfortable.",
-    "cognition": "I am always keen to expand my knowledge and learn new technologies and ways of working. Challenges motivate me to grow continuously and to focus on new, innovative solutions.",
-    "quality": "I am solution-oriented, think analytically and persevere until a good solution is found. I enjoy working in a team, sharing my knowledge and find it exciting to develop and implement new ideas together."
+    "description": "My name is Niko, and programming is my passion. I'm enthusiastic about developing solutions that simplify or automate processes. I'm motivated by solving problems through technology and making things more efficient. I place great value on clear structures and well-thought-out workflows.",
+    "location": "I live in a privately owned home in Rheinböllen, a town on the edge of the beautiful Hunsrück region – peacefully located and therefore perfect for coding. Ideal for remote work.",
+    "cognition": "Through regular further education, I expand my knowledge and learn new technologies and ways of working. Challenges motivate me to grow continuously and to strive for new, innovative solutions.",
+    "quality": "Thanks to my solution-oriented approach, I think analytically and persistently until a good and satisfying solution is found. I enjoy working in a team, sharing my knowledge, and find it exciting to develop and implement new ideas together."
   },
   "Skills": {
     "title": "Skill Set",
     "headline": "Technologies",
-    "description": "I am currently working intensively with Angular and have a lot of experience with it. But I also regularly work with Firebase, integrate APIs and use Git for version control. I'm always curious about new technologies and like to try out new tools - for me, constant learning is simply part of development.",
+    "description": "I am currently working intensively with Angular and have gained extensive experience with this framework through my previous projects. Additionally, I regularly work with Firebase, integrate APIs, and use Git for version control. I approach new technologies and tools with enthusiasm. Continuous learning and further development are, for me, an essential part of being a developer.",
     "skill1": "You need ",
     "skill2": "another skill?",
     "contactMe": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
@@ -66,7 +70,7 @@
     "title": "Let's work together",
     "headline": "Contact me",
     "headline2": "I look forward to hearing from you!",
-    "description": "Are you looking for support for your project? I'm open to exciting challenges - especially in the area of front-end development. Together we can develop solutions that really make a difference. Let's talk and see how I can enrich your team or project with my experience.",
+    "description": "Are you looking for support for your project? I am open to exciting challenges – especially in the field of frontend development. Together, we can develop solutions that truly make a difference. Let's connect and see how I can enrich your team or project with my experience.",
     "description2": "Need a Frontend developer?",
     "description3": "Let’s talk!",
     "Form": {
