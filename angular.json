@@ -30,6 +30,11 @@
                 "glob": "sendMail.php",
                 "input": "src/app",
                 "output": "./"
+              },
+              {
+                "glob": ".htaccess",
+                "input": "src/config",
+                "output": "./"
               }
             ],
             "styles": [
