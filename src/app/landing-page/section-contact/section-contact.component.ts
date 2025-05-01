@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-section-contact',
@@ -15,16 +16,41 @@ export class SectionContactComponent {
   dataContact = { name: '', mail: '', message: '' };
   durationInSeconds = 5;
 
+  http = inject(HttpClient);
+
   constructor(private snackBar: MatSnackBar, public dialog: MatDialog) {}
 
   openPrivacyPolicy(e: any) {
     e.preventDefault();
     window.open('/privacyPolicy', "_blank'");
   }
+
+  post = {
+    endPoint: 'https://niko-helwig.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid && ngForm.submitted) {
-      this.openSnackBar();
-      ngForm.reset();
+      this.http
+        .post(this.post.endPoint, this.post.body(this.dataContact))
+        .subscribe({
+          next: (response: any) => {
+            ngForm.reset();
+          },
+          error: (error: any) => {
+            console.error(error);
+          },
+          complete: () => {
+            this.openSnackBar();
+          },
+        });
     }
   }
   openSnackBar() {
