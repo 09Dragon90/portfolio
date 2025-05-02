@@ -1,167 +1,153 @@
 <div class="dialog">
-  <div class="wrapper">
+  @if ( isSmallScreen() ) {
+  <app-header [menueActive]="false"></app-header>
+  }@else {
+  <app-header-mobile [menueActive]="false"></app-header-mobile>
+  }
+  <div class="content">
     @if (currentLanguage=="de") {
-    <h1>Impressum</h1>
-    <p>Informationen über den Diensteanbieter.</p>
-    <p>Niko Helwig</p>
-    <p>Erbacher Starße 24, <br />55494 Rheinböllen, <br />Deutschland</p>
-    <p>
-      <strong>Tel.:</strong> +49 1520 1046597<br />
-      <strong>E-Mail:</strong>
-      <a href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
-    </p>
-    <div style="display: none"></div>
-    <div style="display: none"></div>
-    <div style="display: none"></div>
-    <h2
-      id="eu-streitschlichtung"
-      data-fontsize="24"
-      style="--fontSize: 24; line-height: 1.5; --minFontSize: 24"
-      data-lineheight="36px"
-    >
-      EU-Streitschlichtung
-    </h2>
-    <p>
-      Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten
-      (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform
-      (OS-Plattform) informieren.<br />
-      Verbraucher haben die Möglichkeit, Beschwerden an die Online
-      Streitbeilegungsplattform der Europäischen Kommission unter
-      <a
-        href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE"
-        target="_blank"
-        rel="follow noopener"
-        >https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE</a
-      >
-      zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in
-      unserem Impressum.
-    </p>
-    <p>
-      Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder
-      verpflichtet sind, an Streitbeilegungsverfahren vor einer
-      Verbraucherschlichtungsstelle teilzunehmen.
-    </p>
-    <h2
-      id="bildernachweis"
-      data-fontsize="24"
-      style="--fontSize: 24; line-height: 1.5; --minFontSize: 24"
-      data-lineheight="36px"
-    >
-      Bildernachweis
-    </h2>
-    <p>
-      Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich
-      geschützt.
-    </p>
-    <p>
-      <strong>Die Bilderrechte liegen bei:</strong>
-      <br />Niko Helwig
-    </p>
-    <div style="display: none"></div>
-    <h2
-      id="onlineauftritte"
-      data-fontsize="24"
-      style="--fontSize: 24; line-height: 1.5; --minFontSize: 24"
-      data-lineheight="36px"
-    >
-      Weitere Onlineauftritte
-    </h2>
-    <p>
-      <strong>Dieses Impressum gilt auch für</strong>
-      <br />
-      <a href="https://github.com/09Dragon90" target="_blank" rel="noopener"
-        >https://github.com/09Dragon90</a
-      >
-      <br />
-      <a
-        href="https://www.linkedin.com/in/musterprofil_79"
-        target="_blank"
-        rel="noopener"
-        >https://www.linkedin.com/in/musterprofil_79</a
-      >
-    </p>
-    <div style="display: none"></div>
-    <p>Alle Texte sind urheberrechtlich geschützt.</p>
-    <p style="margin-top: 15px">
-      Quelle: Erstellt mit dem
-      <a
-        href="https://www.adsimple.de/impressum-generator/"
-        title="Impressum Generator Deutschland von AdSimple"
-        >Impressum Generator</a
-      >
-      von AdSimple
-    </p>
+    <div>
+      <h1>Impressum</h1>
+      <p>Informationen über den Diensteanbieter.</p>
+      <p>Niko Helwig</p>
+      <p>Erbacher Starße 24, <br />55494 Rheinböllen, <br />Deutschland</p>
+      <p>
+        <strong>Tel.:</strong> +49 1520 1046597<br />
+        <strong>E-Mail:</strong>
+        <a href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
+      </p>
+      <div style="display: none"></div>
+      <div style="display: none"></div>
+      <div style="display: none"></div>
+      <h2 id="eu-streitschlichtung">EU-Streitschlichtung</h2>
+      <p>
+        Gemäß Verordnung über Online-Streitbeilegung in
+        Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die
+        Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br />
+        Verbraucher haben die Möglichkeit, Beschwerden an die Online
+        Streitbeilegungsplattform der Europäischen Kommission unter
+        <a
+          href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE"
+          target="_blank"
+          rel="follow noopener"
+          >https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE</a
+        >
+        zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in
+        unserem Impressum.
+      </p>
+      <p>
+        Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder
+        verpflichtet sind, an Streitbeilegungsverfahren vor einer
+        Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+      <h2 id="bildernachweis">Bildernachweis</h2>
+      <p>
+        Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich
+        geschützt.
+      </p>
+      <p>
+        <strong>Die Bilderrechte liegen bei:</strong>
+        <br />Niko Helwig
+      </p>
+      <h2 id="onlineauftritte">Weitere Onlineauftritte</h2>
+      <p>
+        <strong>Dieses Impressum gilt auch für</strong>
+        <br />
+        <a href="https://github.com/09Dragon90" target="_blank" rel="noopener"
+          >https://github.com/09Dragon90</a
+        >
+        <br />
+        <a
+          href="https://www.linkedin.com/in/musterprofil_79"
+          target="_blank"
+          rel="noopener"
+          >https://www.linkedin.com/in/musterprofil_79</a
+        >
+      </p>
+      <p>Alle Texte sind urheberrechtlich geschützt.</p>
+      <p>
+        Quelle: Erstellt mit dem
+        <a
+          href="https://www.adsimple.de/impressum-generator/"
+          title="Impressum Generator Deutschland von AdSimple"
+          >Impressum Generator</a
+        >
+        von AdSimple
+      </p>
+    </div>
     } @else {
-    <h1>Legal Notice</h1>
-    <p>Information about the service provider.</p>
-    <p>Niko Helwig</p>
-    <p>Erbacher Straße 24,<br />55494 Rheinböllen,<br />Germany</p>
-    <p>
-      <strong>Phone:</strong> +49 1520 1046597<br />
-      <strong>Email:</strong>
-      <a href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
-    </p>
+    <div>
+      <h1>Legal Notice</h1>
+      <p>Information about the service provider.</p>
+      <p>Niko Helwig</p>
+      <p>Erbacher Straße 24,<br />55494 Rheinböllen,<br />Germany</p>
+      <p>
+        <strong>Phone:</strong> +49 1520 1046597<br />
+        <strong>Email:</strong>
+        <a href="mailto:nhelwig@gmx.de">nhelwig&#64;gmx.de</a>
+      </p>
 
-    <h2 id="eu-dispute-resolution">EU Dispute Resolution</h2>
-    <p>
-      In accordance with the Regulation on Online Dispute Resolution for
-      Consumer Disputes (ODR Regulation), we would like to inform you about the
-      Online Dispute Resolution platform (ODR platform).<br />
-      Consumers have the possibility to submit complaints to the European
-      Commission's Online Dispute Resolution platform at:<br />
-      <a
-        href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=EN"
-        target="_blank"
-        rel="follow noopener"
-      >
-        https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE
-      </a>
-      <br />
-      You can find the necessary contact details above in our legal notice.
-    </p>
-    <p>
-      However, we would like to point out that we are neither willing nor
-      obliged to participate in dispute resolution proceedings before a consumer
-      arbitration board.
-    </p>
+      <h2 id="eu-dispute-resolution">EU Dispute Resolution</h2>
+      <p>
+        In accordance with the Regulation on Online Dispute Resolution for
+        Consumer Disputes (ODR Regulation), we would like to inform you about
+        the Online Dispute Resolution platform (ODR platform).<br />
+        Consumers have the possibility to submit complaints to the European
+        Commission's Online Dispute Resolution platform at:<br />
+        <a
+          href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=EN"
+          target="_blank"
+          rel="follow noopener"
+        >
+          https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE
+        </a>
+        <br />
+        You can find the necessary contact details above in our legal notice.
+      </p>
+      <p>
+        However, we would like to point out that we are neither willing nor
+        obliged to participate in dispute resolution proceedings before a
+        consumer arbitration board.
+      </p>
 
-    <h2 id="image-credits">Image Credits</h2>
-    <p>
-      The images, photos, and graphics on this website are protected by
-      copyright.
-    </p>
-    <p>
-      <strong>The image rights belong to:</strong><br />
-      Niko Helwig
-    </p>
+      <h2 id="image-credits">Image Credits</h2>
+      <p>
+        The images, photos, and graphics on this website are protected by
+        copyright.
+      </p>
+      <p>
+        <strong>The image rights belong to:</strong><br />
+        Niko Helwig
+      </p>
 
-    <h2 id="other-online-presences">Other Online Presences</h2>
-    <p>
-      <strong>This legal notice also applies to:</strong><br />
-      <a href="https://github.com/09Dragon90" target="_blank" rel="noopener">
-        https://github.com/09Dragon90 </a
-      ><br />
-      <a
-        href="https://www.linkedin.com/in/musterprofil_79"
-        target="_blank"
-        rel="noopener"
-      >
-        https://www.linkedin.com/in/musterprofil_79
-      </a>
-    </p>
+      <h2 id="other-online-presences">Other Online Presences</h2>
+      <p>
+        <strong>This legal notice also applies to:</strong><br />
+        <a href="https://github.com/09Dragon90" target="_blank" rel="noopener">
+          https://github.com/09Dragon90 </a
+        ><br />
+        <a
+          href="https://www.linkedin.com/in/musterprofil_79"
+          target="_blank"
+          rel="noopener"
+        >
+          https://www.linkedin.com/in/musterprofil_79
+        </a>
+      </p>
 
-    <p>All texts are protected by copyright.</p>
+      <p>All texts are protected by copyright.</p>
 
-    <p style="margin-top: 15px">
-      Source: Created with the
-      <a
-        href="https://www.adsimple.de/impressum-generator/"
-        title="Legal Notice Generator Germany by AdSimple"
-      >
-        Legal Notice Generator
-      </a>
-      by AdSimple
-    </p>
+      <p>
+        Source: Created with the
+        <a
+          href="https://www.adsimple.de/impressum-generator/"
+          title="Legal Notice Generator Germany by AdSimple"
+        >
+          Legal Notice Generator
+        </a>
+        by AdSimple
+      </p>
+    </div>
     }
   </div>
 </div>
