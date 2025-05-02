@@ -113,6 +113,7 @@ body {
 }
 
 .dialog-project {
+  max-width: 1440px !important;
   overflow: hidden;
   border: 2px solid $main-green;
   border-radius: 30px;
