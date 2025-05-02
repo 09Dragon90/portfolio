@@ -1,8 +1,8 @@
 <div class="dialog">
   @if ( isSmallScreen() ) {
-  <app-header [menueActive]="false"></app-header>
+  <app-header></app-header>
   }@else {
-  <app-header-mobile [menueActive]="false"></app-header-mobile>
+  <app-header-mobile></app-header-mobile>
   }
   <div class="content">
     @if (currentLanguage=="de") {
