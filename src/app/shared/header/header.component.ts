@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translation.service';
 
@@ -12,6 +12,7 @@ import { TranslationService } from '../../services/translation.service';
 })
 export class HeaderComponent {
   translation = inject(TranslationService);
+  @Input() menueActive = true;
 
   constructor() {}
 

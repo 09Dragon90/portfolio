@@ -1,5 +1,6 @@
 <div class="dialog">
   <div class="menue">
+    @if (menueActive) {
     <div class="link">
       <a href="#section-about-me">{{ "Header.anker1" | translate }}</a>
       <div class="point"></div>
@@ -12,6 +13,7 @@
       <a href="#section-projects">{{ "Header.anker3" | translate }}</a>
       <div class="point"></div>
     </div>
+    }
     <div class="btn-language" (click)="translation.changeLanguage()">
       <div class="slider" [class.active]="translation.language == 'en'"></div>
       <p [class.active-language]="translation.language == 'de'">DE</p>
