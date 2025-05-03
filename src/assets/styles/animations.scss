@@ -76,3 +76,36 @@
     opacity: 0;
   }
 }
+
+.animation-zoom {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.start-animation-zoom {
+  animation: in-zoom 1s ease-out forwards;
+}
+
+.reverse-animation-zoom {
+  animation: out-zoom 1s ease-out forwards;
+}
+
+@keyframes in-zoom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes out-zoom {
+  from {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  to {
+    opacity: 0;
+  }
+}
