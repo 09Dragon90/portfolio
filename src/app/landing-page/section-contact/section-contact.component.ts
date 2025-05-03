@@ -1,9 +1,10 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { HttpClient } from '@angular/common/http';
+import { AnimationService } from '../../services/animation.service';
 
 @Component({
   selector: 'app-section-contact',
@@ -18,7 +19,19 @@ export class SectionContactComponent {
 
   http = inject(HttpClient);
 
-  constructor(private snackBar: MatSnackBar, public dialog: MatDialog) {}
+  constructor(
+    private snackBar: MatSnackBar,
+    public dialog: MatDialog,
+    private animations: AnimationService
+  ) {}
+
+  @ViewChild('left') observeleft!: ElementRef;
+  @ViewChild('right') observeRight!: ElementRef;
+
+  ngAfterViewInit() {
+    this.animations.observeElement(this.observeleft, 'animation-l-r');
+    this.animations.observeElement(this.observeRight, 'animation-l-r');
+  }
 
   openPrivacyPolicy(e: any) {
     e.preventDefault();

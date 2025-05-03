@@ -1,5 +1,5 @@
 <section class="content" id="section-contact">
-  <div class="contact-left">
+  <div class="contact-left animation-l-r" #left>
     <div>
       <h4>{{ "Contact.headline" | translate }}</h4>
       <h2>{{ "Contact.title" | translate }}</h2>
@@ -15,7 +15,7 @@
       <span>{{ "Contact.description3" | translate }}</span>
     </p>
   </div>
-  <div class="contact-right">
+  <div class="contact-right animation-r-l" #right>
     <form (ngSubmit)="onSubmit(formContact)" #formContact="ngForm">
       <div class="row">
         <label for="name">{{ "Contact.Form.Name.headline" | translate }}</label>
