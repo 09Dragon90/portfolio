@@ -1,0 +1,32 @@
+.animation-b-t {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.start-animation-b-t {
+  animation: in-bottom-to-top 1s ease-in-out forwards;
+}
+
+.reverse-animation-b-t {
+  animation: out-bottom-to-top 1s ease-in-out forwards;
+}
+
+@keyframes in-bottom-to-top {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes out-bottom-to-top {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+  }
+}
