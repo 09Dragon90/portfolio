@@ -87,6 +87,16 @@
   }
   &:hover ~ .project-img {
     display: block !important;
+    animation: rotatedX 0.8s linear forwards;
+  }
+}
+
+@keyframes rotatedX {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }
 
