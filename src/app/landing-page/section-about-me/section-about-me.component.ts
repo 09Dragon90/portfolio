@@ -10,30 +10,7 @@ import { AnimationService } from '../../services/animation.service';
   styleUrl: './section-about-me.component.scss',
 })
 export class SectionAboutMeComponent {
-  sectionY = 0;
-  viewportHeight: Number;
-  constructor(private animations: AnimationService) {
-    this.viewportHeight = window.innerHeight;
-  }
-
-  // ngAfterViewInit() {
-  //   this.sectionY = this.animations.getYComponent('section-about-me');
-  // }
-
-  // ngOnInit() {
-  //   window.addEventListener('scroll', this.onScroll, true);
-  // }
-
-  // onScroll = () => {
-  //   const yOffset = window.scrollY;
-  //   console.log('Componente Y-Wert:', this.sectionY);
-  //   console.log('Aktueller Y-Wert:', yOffset);
-  //   console.log('Aktueller Y-Wert:', yOffset);
-  // };
-
-  // ngOnDestroy() {
-  //   window.removeEventListener('scroll', this.onScroll, true);
-  // }
+  constructor(private animations: AnimationService) {}
 
   @ViewChild('article') observeArticle!: ElementRef;
   @ViewChild('imgProfile') observeImgProfile!: ElementRef;
