@@ -1,7 +1,7 @@
 <section id="section-skill-set" class="content">
-  <h4>{{ "Skills.headline" | translate }}</h4>
+  <h4 class="animation-l-r" #headline>{{ "Skills.headline" | translate }}</h4>
   <div class="section-skills">
-    <div class="text">
+    <div class="text animation-l-r" #articelSkill>
       <article>
         <h2>{{ "Skills.title" | translate }}</h2>
         <p>
@@ -19,7 +19,7 @@
         >
       </article>
     </div>
-    <div class="skills-box">
+    <div class="skills-box animation-r-l" #skillSet>
       @for (skill of skills; track i;let i =$index) {
       <div class="skill">
         <img

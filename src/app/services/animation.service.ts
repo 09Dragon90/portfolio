@@ -11,7 +11,7 @@ export class AnimationService {
       (entries) => {
         entries.forEach((entry) => {
           const el = element.nativeElement;
-          const isBelowViewport = entry.boundingClientRect.top > window.scrollY;
+          const isBelowViewport = entry.boundingClientRect.top > 0;
 
           if (entry.isIntersecting) {
             el.classList.add('start-' + animation);

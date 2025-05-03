@@ -1,6 +1,8 @@
 @import "./../../../assets/styles/colors.scss";
+@import "./../../../assets/styles/animations.scss";
 
 #section-skill-set {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;

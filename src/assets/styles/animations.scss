@@ -4,11 +4,11 @@
 }
 
 .start-animation-b-t {
-  animation: in-bottom-to-top 1s ease-in-out forwards;
+  animation: in-bottom-to-top 1s ease-out forwards;
 }
 
 .reverse-animation-b-t {
-  animation: out-bottom-to-top 1s ease-in-out forwards;
+  animation: out-bottom-to-top 1s ease-out forwards;
 }
 
 @keyframes in-bottom-to-top {
@@ -25,6 +25,52 @@
   from {
     opacity: 1;
     transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.animation-l-r {
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.start-animation-l-r {
+  animation: in-X 1s ease-out forwards;
+}
+
+.reverse-animation-l-r {
+  animation: out-X 1s ease-out forwards;
+}
+
+.animation-r-l {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.start-animation-r-l {
+  animation: in-X 1s ease-out forwards;
+}
+
+.reverse-animation-r-l {
+  animation: out-X 1s ease-out forwards;
+}
+
+@keyframes in-X {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes out-X {
+  from {
+    opacity: 1;
+    transform: translateX(0);
   }
   to {
     opacity: 0;
