@@ -1,27 +1,40 @@
-# Portfolio
+# 💼 Portfolio – Niko Helwig
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+## 🌟 About this project
 
-## Development server
+This is my personal **portfolio website**, built with **Angular** and **SCSS**, where I showcase selected web development projects, technologies, and contact options.  
+It acts as a central hub to demonstrate my frontend skills and provide access to live demos and GitHub repositories.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The portfolio includes:
 
-## Code scaffolding
+- A modern, component-based project gallery
+- Responsive and animated UI with SCSS styling
+- Links to GitHub and live test environments
+- Clean architecture following Angular best practices
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Built With
 
-## Build
+- ![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white) Angular
+- ![SCSS](https://img.shields.io/badge/-SCSS-CC6699?logo=sass&logoColor=white) SCSS
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white) HTML
+- ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) TypeScript
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🌐 Live Website
 
-## Running unit tests
+👉 [Visit Portfolio ↗](https://niko-helwig.de)  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## ✨ Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- 🧩 Modular Angular architecture
+- 🎨 SCSS-based responsive and maintainable styling
+- 🖼️ Project showcase with images and descriptions
+- 🔗 GitHub & Live Demo links
+- ⚡ Smooth animations and transitions
 
-## Further help
+## 🚀 Run Locally
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/portfolio.git
