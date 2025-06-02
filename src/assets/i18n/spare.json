@@ -1,0 +1,18 @@
+{
+  "ProjectsEN": {
+    "name": "DA Bubble",
+    "technologies": ["Angular", "TypeScript", "SCSS", "Firebase"],
+    "images": "da_bubble.png",
+    "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "github": "https://github.com/09Dragon90",
+    "link": "https://da-bubble.niko-helwig.de"
+  },
+  "ProjectsDE": {
+    "name": "DA Bubble",
+    "technologies": ["Angular", "TypeScript", "SCSS", "Firebase"],
+    "images": "da_bubble.png",
+    "description": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
+    "github": "https://github.com/09Dragon90",
+    "link": "https://da-bubble.niko-helwig.de"
+  }
+}

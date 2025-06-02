@@ -55,14 +55,6 @@
         "description": "Jump-, run- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
         "github": "https://github.com/09Dragon90/el_pollo_loco",
         "link": "https://el-pollo-loco.niko-helwig.de"
-      },
-      {
-        "name": "DA Bubble",
-        "technologies": ["Angular", "TypeScript", "SCSS", "Firebase"],
-        "images": "da_bubble.png",
-        "description": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
-        "github": "https://github.com/09Dragon90",
-        "link": "https://da-bubble.niko-helwig.de"
       }
     ]
   },
